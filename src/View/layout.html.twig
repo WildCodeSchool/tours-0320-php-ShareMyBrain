@@ -1,165 +1,107 @@
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+        <title>ShareMyBrain - {% block title %}undefined title{% endblock %}</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="icon" href="/assets/images/favicon.png">  
+    </head>
 
-    <title>ShareMyBrain - {% block title %}undefined title{% endblock %}</title>
+    <body>                                                 <!-- NAVBAR -->
+        <header>
+            <div id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <a class="navbar-brand" href="#">ShareMyBrain</a>
+                <img class="logoSharemyBrain" src="https://zupimages.net/up/20/17/gi9o.png" alt="logo sharemybrain">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="icon" href="/assets/images/favicon.png">
-    
-   
-</head>
-
-<body>
-<header> 
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand" href="#">ShareMyBrain</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <img class="logoSharemyBrain" src="https://zupimages.net/up/20/17/gi9o.png" alt="logo sharemybrain">
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mx-auto topnav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Thèmes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contactez-nous</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav topnav ">
-                <li class="nav-item">
-                    <a class="nav-link btn  text-white bg-secondary" type="button" href="#" data-toggle="modal" data-target="#myModal">Se connecter</a>                  
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn  text-white bg-dark" type="button" href="#" data-toggle="modal" data-target="#myModal">Créer un compte</a>
-                </li>
-            </ul>
-        </div>
-
-            <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Customer Sign In</h4>
-                    <button type="button" class="close" data-dismiss="modal">×</button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mx-auto topnav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thèmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactez-nous</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav topnav ">
+                        <li class="nav-item">
+                            <a class="nav-link btn  text-white bg-secondary" type="button" href="#" data-toggle="modal" data-target="#myModal">Se connecter</a>                  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn  text-white bg-dark" type="button" href="#" data-toggle="modal" data-target="#myModal">Créer un compte</a>
+                        </li>
+                    </ul>
                 </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form>
-                        <label class="sr-only" for="usrname">Username</label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-
-
-                        <label class="sr-only" for="Password">Name</label>
-                        <div class="input-group mb-2">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
-                            </div>
-                            <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" >Sign In</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </nav>
-</header>
-</body>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<! --------FOOTER------->
-<footer id="footer" class="footer-1">
-    <div class="main-footer widgets-dark typo-light">
-        <div class="container">
+            </nav>
+        </header>
+        <footer id="footer" class="footer-1">               <!-- FOOTER -->
+            <div class="main-footer widgets-dark typo-light">
+            <div class="container">
             <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget subscribe no-box">
-                <h5 class="widget-title">ShareMyBrain<span></span></h5>
-                <p>Échanger ses connaissances dans différents domaines, se coucher moins bête, trouver des solutions concrètes , et tout cela grâce à vous. </p>
-            </div>
-        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget subscribe no-box">
+                                <h5 class="widget-title">ShareMyBrain<span></span></h5>
+                                <p>Échanger ses connaissances dans différents domaines, se coucher moins bête, trouver des solutions concrètes , et tout cela grâce à vous. </p>
+                            </div>
+                        </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-3">
-    <div class="widget no-box">
-        <h5 class="widget-title">Trouvez votre réponse parmi nos thèmes...<span></span></h5>
-    <ul class="thumbnail-widget">
-        <li>
-        <div class="thumb-content"><a href="#.">Jardinage</a></div>	
-        </li>
-        <li>
-            <div class="thumb-content"><a href="#.">Cuisine</a></div>	
-        </li>
-        <li>
-            <div class="thumb-content"><a href="#.">Bricolage</a></div>	
-        </li>
-        <li>
-            <div class="thumb-content"><a href="#.">Ménage</a></div>	
-        </li>
-        <li>
-            <div class="thumb-content"><a href="#.">Autres</a></div>	
-        </li>
-        </ul>
-</div>
-</div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                            <h5 class="widget-title">Trouvez votre réponse parmi nos thèmes...<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a href="#.">Jardinage</a></div>	
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Cuisine</a></div>	
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Bricolage</a></div>	
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="#.">Ménage</a></div>	
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-3">
-    <div class="widget no-box">
-        <h5 class="widget-title">Inscrivez-vous<span></span></h5>
-        <p>Trouver réponses à vos questions, et aidez les autres.</p>
-        <a class="btn" href="#." target="_blank">S'entraider</a>
-    </div>
-    </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Inscrivez-vous<span></span></h5>
+                        <p>Trouver des réponses à vos questions, et aidez les autres.</p>
+                        <a class="btn" href="#." target="_blank">S'entraider</a>
+                    </div>
+                </div>
 
-<div class="col-xs-12 col-sm-6 col-md-3">
-
-    <div class="widget no-box">
-    <h5 class="widget-title">Nous contacter<span></span></h5>
-
-    <p><a href="mailto:info@domain.com" title="glorythemes">info@sharemybrain.com</a></p>
-   
-    </div>
-</div>
-
-        </div>
-    </div>
-</div>
-  
-    <div class="footer-copyright">
-    <div class="container">
-    <div class="row">
-    <div class="col-md-12 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Nous contacter<span></span></h5>
+                        <p><a href="mailto:info@domain.com" title="glorythemes">info@sharemybrain.com</a></p>
+            
+                    </div>
+                </div>
 
             </div>
-        </div>
-    </div>
-</div>
-</footer>
+            </div>
+            </div>
+
+            <div class="footer-copyright">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-12 text-center">
+
+            </div>
+            </div>
+            </div>
+            </div>
+        </footer>
+    </body>
 </html>
 
 
