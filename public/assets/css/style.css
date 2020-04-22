@@ -1,9 +1,8 @@
 .topnav a:hover {
-	border-bottom: 3px #F17F42;
+	border-bottom: 10px #F17F42;
 }
 
-#navbar {position: fixed;
-width: 100%;}
+
 													/*==================== 
 														LogoNavbar 
 													====================== */
