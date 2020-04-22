@@ -1,0 +1,55 @@
+.topnav a:hover {
+	border-bottom: 10px #F17F42;
+}
+
+													/*==================== 
+														LogoNavbar 
+													====================== */
+.logoSharemyBrain {
+	width: 50px;
+	height: 50px;
+}
+
+
+													/*==================== 
+														Footer 
+													====================== */
+
+/* Main Footer */
+
+footer .main-footer{	padding: 20px 0;	background: #252525 ;}
+footer ul{	padding-left: 0;	list-style: none;}
+footer { padding-top: 100%; padding-bottom: 0px;
+}
+
+
+
+													/*==================== 
+														Widgets / Footer 
+													====================== */
+
+.widget{	padding: 20px;	margin-bottom: 40px;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget li a{	color: #ff8d1e;}
+.widget li a:hover{	color: #4b92dc;}
+.widget-title {margin-bottom: 20px;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: right;	background: #7f7f7f;}
+
+
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff;}
+
+
+.btn{background-color: #ff8d1e; color:#fff;}
+.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+}
