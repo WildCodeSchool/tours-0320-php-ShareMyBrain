@@ -72,3 +72,9 @@ REFERENCES `theme` (`ID`);
 ALTER TABLE `user_theme` ADD CONSTRAINT `fk_user_theme_id_user` FOREIGN KEY(`id_user`)
 REFERENCES `user` (`ID`);
 
+-- Contenu de la table `thème`
+--
+
+INSERT INTO theme VALUES (1,'Jardinage'),(2,'Cuisine'),(3,'Bricolage'),(4,'Ménage');
+
+-- --------------------------------------------------------
