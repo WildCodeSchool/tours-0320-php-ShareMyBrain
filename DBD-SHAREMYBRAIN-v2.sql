@@ -1,33 +1,33 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/?code=1d9826745d9574632b33#/d/YipnsC
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
 CREATE TABLE `answer` (
-    `ID` int  NOT NULL ,
+    `ID` int AUTO_INCREMENT NOT NULL ,
     `id_question` int  NOT NULL ,
     `content` LONGTEXT  NOT NULL ,
     `id_user` INT  NOT NULL ,
-    `date` DATE  NOT NULL ,
+    `date` DATE NULL ,
     PRIMARY KEY (
         `ID`
     )
 );
 
 CREATE TABLE `question` (
-    `ID` int  NOT NULL ,
+    `ID` int AUTO_INCREMENT NOT NULL ,
     `id_theme` int  NOT NULL ,
     `content` LONGTEXT  NOT NULL ,
     `id_user` int  NOT NULL ,
-    `date` DATE  NOT NULL ,
-    `resolved` bool  NOT NULL ,
+    `date` DATE NULL ,
+    `resolved` bool NULL ,
     PRIMARY KEY (
         `ID`
     )
 );
 
 CREATE TABLE `theme` (
-    `ID` int  NOT NULL ,
+    `ID` int AUTO_INCREMENT NOT NULL ,
     `name` VARCHAR(255)  NOT NULL ,
     PRIMARY KEY (
         `ID`
@@ -35,7 +35,7 @@ CREATE TABLE `theme` (
 );
 
 CREATE TABLE `user_theme` (
-    `ID` int  NOT NULL ,
+    `ID` int AUTO_INCREMENT NOT NULL ,
     `id_theme` int  NOT NULL ,
     `id_user` int  NOT NULL ,
     PRIMARY KEY (
@@ -44,11 +44,11 @@ CREATE TABLE `user_theme` (
 );
 
 CREATE TABLE `user` (
-    `ID` int  NOT NULL ,
+    `ID` int AUTO_INCREMENT NOT NULL ,
     `username` VARCHAR(255)  NOT NULL ,
-    `userpassword` VARCHAR(255)  NOT NULL ,
-    `usermail` VARCHAR(255)  NOT NULL ,
-    `admin` bool  NOT NULL ,
+    `userpassword` VARCHAR(255) NULL ,
+    `usermail` VARCHAR(255) NULL ,
+    `admin` bool NULL ,
     PRIMARY KEY (
         `ID`
     )
@@ -75,6 +75,9 @@ REFERENCES `user` (`ID`);
 -- Contenu de la table `thème`
 --
 
-INSERT INTO theme VALUES (1,'Jardinage'),(2,'Cuisine'),(3,'Bricolage'),(4,'Ménage');
+INSERT INTO theme (name) VALUES ('Jardinage'),('Cuisine'),('Bricolage'),('Ménage');
 
--- --------------------------------------------------------
+-- Contenu de la table `user`
+--
+
+INSERT INTO user (username) VALUES ('visiteur'),('admin');
