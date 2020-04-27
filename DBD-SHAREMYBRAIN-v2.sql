@@ -1,76 +1,79 @@
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/?code=1d9826745d9574632b33#/d/YipnsC
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+DROP DATABASE IF EXISTS sharemybrain;
+CREATE DATABASE sharemybrain CHARACTER SET 'utf8';
+USE sharemybrain;
 
 CREATE TABLE `answer` (
-    `ID` int AUTO_INCREMENT NOT NULL ,
+    `id` int AUTO_INCREMENT NOT NULL ,
     `id_question` int  NOT NULL ,
     `content` LONGTEXT  NOT NULL ,
     `id_user` INT  NOT NULL ,
     `date` DATE NULL ,
     PRIMARY KEY (
-        `ID`
+        `id`
     )
 );
 
 CREATE TABLE `question` (
-    `ID` int AUTO_INCREMENT NOT NULL ,
+    `id` int AUTO_INCREMENT NOT NULL ,
     `id_theme` int  NOT NULL ,
     `content` LONGTEXT  NOT NULL ,
     `id_user` int  NOT NULL ,
     `date` DATE NULL ,
     `resolved` bool NULL ,
     PRIMARY KEY (
-        `ID`
+        `id`
     )
 );
 
 CREATE TABLE `theme` (
-    `ID` int AUTO_INCREMENT NOT NULL ,
+    `id` int AUTO_INCREMENT NOT NULL ,
     `name` VARCHAR(255)  NOT NULL ,
     PRIMARY KEY (
-        `ID`
+        `id`
     )
 );
 
 CREATE TABLE `user_theme` (
-    `ID` int AUTO_INCREMENT NOT NULL ,
+    `id` int AUTO_INCREMENT NOT NULL ,
     `id_theme` int  NOT NULL ,
     `id_user` int  NOT NULL ,
     PRIMARY KEY (
-        `ID`
+        `id`
     )
 );
 
 CREATE TABLE `user` (
-    `ID` int AUTO_INCREMENT NOT NULL ,
+    `id` int AUTO_INCREMENT NOT NULL ,
     `username` VARCHAR(255)  NOT NULL ,
     `userpassword` VARCHAR(255) NULL ,
     `usermail` VARCHAR(255) NULL ,
     `admin` bool NULL ,
     PRIMARY KEY (
-        `ID`
+        `id`
     )
 );
 
 ALTER TABLE `answer` ADD CONSTRAINT `fk_answer_id_question` FOREIGN KEY(`id_question`)
-REFERENCES `question` (`ID`);
+REFERENCES `question` (`id`);
 
 ALTER TABLE `answer` ADD CONSTRAINT `fk_answer_id_user` FOREIGN KEY(`id_user`)
-REFERENCES `user` (`ID`);
+REFERENCES `user` (`id`);
 
 ALTER TABLE `question` ADD CONSTRAINT `fk_question_id_theme` FOREIGN KEY(`id_theme`)
-REFERENCES `theme` (`ID`);
+REFERENCES `theme` (`id`);
 
 ALTER TABLE `question` ADD CONSTRAINT `fk_question_id_user` FOREIGN KEY(`id_user`)
-REFERENCES `user` (`ID`);
+REFERENCES `user` (`id`);
 
 ALTER TABLE `user_theme` ADD CONSTRAINT `fk_user_theme_id_theme` FOREIGN KEY(`id_theme`)
-REFERENCES `theme` (`ID`);
+REFERENCES `theme` (`id`);
 
 ALTER TABLE `user_theme` ADD CONSTRAINT `fk_user_theme_id_user` FOREIGN KEY(`id_user`)
-REFERENCES `user` (`ID`);
+REFERENCES `user` (`id`);
 
 -- Contenu de la table `thème`
 --
@@ -81,3 +84,4 @@ INSERT INTO theme (name) VALUES ('Jardinage'),('Cuisine'),('Bricolage'),('Ménag
 --
 
 INSERT INTO user (username) VALUES ('visiteur'),('admin');
+
