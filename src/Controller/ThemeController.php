@@ -37,15 +37,8 @@ class ThemeController extends AbstractController
         $themeManager = new ThemeManager();
         $theme = $themeManager->selectOneById($id);
 
-        return $this->twig->render('Theme/show.html.twig',
-            ['questions' => $questions,
-            'theme' => $theme
-            ]);
+        return $this->twig->render('Theme/show.html.twig', [
+            'questions' => $questions,
+            'theme' => $theme ]);
     }
-
-
-
-
 }
-
-

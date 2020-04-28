@@ -45,11 +45,4 @@ class QuestionManager extends AbstractManager
 
         return $statement->fetchAll();
     }
-
-
-
-
 }
-
-
-

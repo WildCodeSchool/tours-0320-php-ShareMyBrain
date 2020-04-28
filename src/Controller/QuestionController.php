@@ -38,7 +38,4 @@ class QuestionController extends AbstractController
         $theme= $themeManager->selectAll();
         return $this->twig->render('Question/add.html.twig', ['themes' => $theme]);
     }
-
 }
-
-
