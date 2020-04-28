@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Theme : {{ theme.name }}</h1>
+    <ul>
+        {% for question in questions %}
+            <li>{{question.content}}</li>
+        {% else %}
+            <li>Nothing to display</li>
+        {% endfor %}
+    </ul>
+    <a href="/theme/index">Back</a>
+{% endblock %}

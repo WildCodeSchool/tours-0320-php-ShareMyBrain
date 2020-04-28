@@ -1,0 +1,15 @@
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Liste des questions</h1>
+    <ul>
+        {% for question in questions %}
+            <li>{{question.content}}</li>
+        {% else %}
+            <li>Nothing to display</li>
+        {% endfor %}
+    </ul>
+    <a href="/question/add">Ajouter une question</a>
+{% endblock %}

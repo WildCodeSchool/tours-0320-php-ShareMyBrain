@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Choisir un thème</h4>
+    <ul>
+        {% for theme in themes %}
+            <li><a href="/theme/show/{{ theme.id }}">{{ theme.name }}</a></li>
+        {% else %}
+            <li>Nothing to display</li>
+        {% endfor %}
+    </ul>
+    <a href="/question/add">Poser une question</a>
+{% endblock %}
+
