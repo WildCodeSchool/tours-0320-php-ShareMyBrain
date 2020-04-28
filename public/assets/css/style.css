@@ -10,9 +10,63 @@
 	height: 50px;
 }
 
-@media screen and (max-width : 767){
+													/*==================== 
+														NavBar Responsive
+													====================== */
 
-}
+#btnconnect {
+	padding-right: 10px;
+	}
+												
+/*== Aligner les items au centre du menu burgers === */
+/*== Réduit la taille des boutons connexion/s'inscrire en responsive === */
+/*== Display none du menu burger sur écran ordinateur === */
+/*== SHAREMYBRAIN écrit en + gros === */
+
+											/*== On aimerait mettre les boutons de même taille === */
+
+
+@media screen and (max-width: 767px) {
+	.logoSharemyBrain {
+		display: none;
+	}
+
+	#navbrand {
+		display: flex;
+		margin-right: 3rem;
+		
+	}
+
+	.nav-item {
+		width : 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+
+	#btnconnect {
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+
+} 
+
+	
+
+
+
+
+
+
+
+
+
+ 
+												
+
+
+
+
 													/*==================== 
 														Footer 
 													====================== */

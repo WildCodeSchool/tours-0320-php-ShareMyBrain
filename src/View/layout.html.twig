@@ -34,16 +34,18 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav topnav" id="bouton-connexion">
-                        <li class="nav-item" id="btnlog">
+                        <li class="nav-item" id="btnconnect">
                             <a class="nav-link btn text-white bg-secondary" href="#" data-toggle="modal" data-target="#myModal">Se connecter</a>                  
                         </li>
-                        <li class="nav-item" id="btnlog">
+                        <li class="nav-item" id="btncreat">
                             <a class="nav-link btn text-white bg-dark" href="#" data-toggle="modal" data-target="#myModal">Créer un compte</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
+
+        {% block content %} {% endblock %}
                                                                 <!-- FOOTER -->     
         <footer id="footer" class="footer-1 page-footer">
             <div class="main-footer widgets-dark typo-light">
