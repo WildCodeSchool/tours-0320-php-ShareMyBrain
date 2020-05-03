@@ -2,10 +2,6 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/?code=1d9826745d9574632b33#/d/YipnsC
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
-DROP DATABASE IF EXISTS sharemybrain;
-CREATE DATABASE sharemybrain CHARACTER SET 'utf8';
-USE sharemybrain;
-
 CREATE TABLE `answer` (
     `id` int AUTO_INCREMENT NOT NULL ,
     `id_question` int  NOT NULL ,
