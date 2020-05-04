@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
         <title>ShareMyBrain - Accueil</title>
         <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/styleresponsive.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="icon" href="/assets/images/favicon.png">  
     </head>
@@ -44,8 +45,141 @@
                 </div>
             </nav>
         </header>
+       
+                                             <!-- SLOGAN HEADER --> 
+        <div class="para-slogan-ctn container-fluide " >  
+        <section class=" slogan container " > 
+        
+        <div class="humain1-ctn">
+        
+        <img class="vectors humain1"
+                src="/assets/images/humain1.png" 
+                alt="une personne assis et repond aux question">
+        </div>
+        
+        <div class="slogantitle-ctn">
+        <a href="#">
+        <span class="slogantitle tracking-in-contract " > share my brain </span>
+        </a>
+        </div>
+        
+        <div class="humain2-ctn" >
+        <img class="vectors humain2"
+                src="/assets/images/humain2.png" 
+                alt="une personne assis et pose des questions"   >
+        </div>
 
-        {% block content %} {% endblock %}
+
+        </section>
+        </div>
+         {% block content %}
+                                                 <!-- THEME SECTION  --> 
+        <section class="glo-theme">
+        <div class="themetitle-ctn">
+        <span class="themetitle" > theme </span>
+        </div>
+        <article class="theme-article-ctn">
+        <ul class="element-ul"  >
+        <li class="element">
+                             <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="https://cdn.pixabay.com/photo/2015/07/28/20/55/tools-864983_960_720.jpg" alt="image outil bricolage  "  data-cerberus="IMG_produitsADecouvrir">
+                                <div class="container-desc ">
+                                    <p class="desc ellipsis">
+                                        <span class="name">
+                                            Bricolage
+                                        </span>
+                                    </p>
+                                </div>
+                                </figure>
+                                
+                             </a>
+                               </li>
+                            <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="//s1.lmcdn.fr/multimedia/f71500837717/10f72593a5650/produits/outils-de-jardinage/new-outil-de-jardinage.jpg?p=md-w330" alt="image d'une pelle du jardinage "  data-cerberus="IMG_produitsADecouvrir">
+                                <div class="container-desc ">
+                                    <p class="desc ellipsis overlay">
+                                        <span class="name">
+                                            Jardinage
+                                        </span>
+                                    </p>
+                                </div>
+                                </figure>
+                                
+                             </a>
+                        </li>
+                        <li class="element">
+                            <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="//s2.lmcdn.fr/multimedia/f71500837711/d047593a5528/produits/poubelle-tabouret-et-accessoires-de-cuisine/new-accessoires-et-rangement.jpg?p=md-w330" alt="image cuisine moderne "  data-cerberus="IMG_produitsADecouvrir">
+                               
+                                 <div class="container-desc ">
+                                    <p class="desc ellipsis">
+                                        <span class="name">
+                                           Cuisine
+                                        </span>
+                                    </p>
+                                </div> 
+                                </figure>
+                                
+                             </a>
+                        </li>
+                         <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="https://www.henryford.com/-/media/henry-ford-blog/images/mobile-interior-banner-images/2019/02/bucket-of-cleaning-products.jpg" alt="image des produits des ménages "  data-cerberus="IMG_produitsADecouvrir">
+                                <div class="container-desc ">
+                                    <p class="desc ellipsis">
+                                        <span class="name">
+                                            Ménage
+                                        </span>
+                                    </p>
+                                </div>
+                                </figure>
+                                
+                             </a>
+                        </li>
+        </ul>
+        </article>
+        </section>
+        {% endblock %}
+                                                     <!-- Question form section -->   
+        <section class="question-form-ctn container-fluid ">
+        <div class=" seconde-questionaire-ctn container"  >
+        <div class="bottom-vector-ctn ">
+        <img class="vectors question-mark"
+                src="/assets/images/questionMark.png" 
+                alt="une personne assis et pose des questions"  >
+        <img class="vectors humain3"
+                src="/assets/images/humain3.png" 
+                alt="une personne assis et pose des questions"   >
+        </div>
+             <form  class="form-inline" method="post" style="  display: grid;
+                     grid-template-columns: 1fr 1fr 1.5fr 2fr 1fr; ">
+                    <div class=" separator-input">
+                    <label for="theme">Thème :</label>
+                    </div>
+                    <div class=" separator-input">
+                    <select name="id_theme" id="theme">
+                        {% for theme in themes %}
+                            <option value="{{ theme.id }}">{{ theme.name }}</option>
+                        {% endfor %}
+                    </select>
+                    </div>
+                    <div class=" separator-input">
+                    <label for="content">Votre question :</label>
+                    </div>
+                    <div class=" separator-input">
+                    <input type="text"  class='input-sizer' name="content" value="{{ question.content }}" size="50" required>
+                    </div>
+                    <div class=" separator-input">
+                    <input type="hidden" name="id_user" value=1>
+                    <input class="botton" type="submit" value="Valider">
+                    </div>
+            </form>
+        </div>
+        </section>  
+         
                                                                 <!-- FOOTER -->     
         <footer id="footer" class="footer-1 page-footer">
             <div class="main-footer widgets-dark typo-light">
