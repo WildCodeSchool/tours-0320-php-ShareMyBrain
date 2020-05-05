@@ -27,7 +27,7 @@
 											/*== On aimerait mettre les boutons de même taille === */
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 	.logoSharemyBrain {
 		display: none;
 	}
