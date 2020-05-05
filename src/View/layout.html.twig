@@ -5,8 +5,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
         <title>ShareMyBrain - Accueil</title>
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/styleresponsive.css">
+        {% block CSS %}<link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/styleresponsive.css">{% endblock %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="icon" href="/assets/images/favicon.png">  
     </head>
@@ -73,76 +73,7 @@
         </section>
         </div>
          {% block content %}
-                                                 <!-- THEME SECTION  --> 
-        <section class="glo-theme">
-        <div class="themetitle-ctn">
-        <span class="themetitle" > theme </span>
-        </div>
-        <article class="theme-article-ctn">
-        <ul class="element-ul"  >
-        <li class="element">
-                             <a href="#">
-                                <figure class=" figure-blc ">
-                                    <img class="visuel zoom lazy loaded" src="../assets/images/tools.jpg" alt="image outil bricolage  "  data-cerberus="IMG_produitsADecouvrir">
-                                <div class="container-desc ">
-                                    <p class="desc ellipsis">
-                                        <span class="name">
-                                           <h5> Bricolage </h5>
-                                        </span>
-                                    </p>
-                                </div>
-                                </figure>
-                                
-                             </a>
-                               </li>
-                            <a href="#">
-                                <figure class=" figure-blc ">
-                                    <img class="visuel zoom lazy loaded" src="../assets/images/new-outil-de-jardinage.jpg" alt="image d'une pelle du jardinage "  data-cerberus="IMG_produitsADecouvrir">
-                                <div class="container-desc ">
-                                    <p class="desc ellipsis overlay">
-                                        <span class="name">
-                                           <h5> Jardinage </h5>
-                                        </span>
-                                    </p>
-                                </div>
-                                </figure>
-                                
-                             </a>
-                        </li>
-                        <li class="element">
-                            <a href="#">
-                                <figure class=" figure-blc ">
-                                    <img class="visuel zoom lazy loaded" src="../assets/images/kitchen.jpg" alt="image cuisine moderne "  data-cerberus="IMG_produitsADecouvrir">
-                               
-                                 <div class="container-desc ">
-                                    <p class="desc ellipsis">
-                                        <span class="name">
-                                          <h5> Cuisine </h5>
-                                        </span>
-                                    </p>
-                                </div> 
-                                </figure>
-                                
-                             </a>
-                        </li>
-                         <a href="#">
-                                <figure class=" figure-blc ">
-                                    <img class="visuel zoom lazy loaded" src="../assets/images/cleaning_products.jpg" alt="image des produits des ménages "  data-cerberus="IMG_produitsADecouvrir">
-                                <div class="container-desc ">
-                                    <p class="desc ellipsis">
-                                        <span class="name">
-                                           <h5> Ménage </h5>
-                                        </span>
-                                    </p>
-                                </div>
-                                </figure>
-                                
-                             </a>
-                        </li>
-        </ul>
-        </article>
-        </section>
-        {% endblock %}
+          {% endblock %}
                                                      <!-- Question form section -->   
         <section class="question-form-ctn container-fluid ">
         <div class=" seconde-questionaire-ctn container"  >

@@ -1,4 +1,78 @@
 {% extends 'layout.html.twig' %}
 
-
+{% block CSS %}
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/styleresponsive.css">
+{% endblock %}
 {% block title %}Accueil{% endblock %}
+ {% block content %}
+                                                 <!-- THEME SECTION  --> 
+        <section class="glo-theme">
+        <div class="themetitle-ctn">
+        <span class="themetitle" > theme </span>
+        </div>
+        <article class="theme-article-ctn">
+        <ul class="element-ul"  >
+        <li class="element">
+                             <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="../assets/images/tools.jpg" alt="image outil bricolage  "  data-cerberus="IMG_produitsADecouvrir">
+                                <div class="container-desc ">
+                                    <p class="desc ellipsis">
+                                        <span class="name">
+                                           <h5> Bricolage </h5>
+                                        </span>
+                                    </p>
+                                </div>
+                                </figure>
+                                
+                             </a>
+                               </li>
+                            <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="../assets/images/new-outil-de-jardinage.jpg" alt="image d'une pelle du jardinage "  data-cerberus="IMG_produitsADecouvrir">
+                                <div class="container-desc ">
+                                    <p class="desc ellipsis overlay">
+                                        <span class="name">
+                                           <h5> Jardinage </h5>
+                                        </span>
+                                    </p>
+                                </div>
+                                </figure>
+                                
+                             </a>
+                        </li>
+                        <li class="element">
+                            <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="../assets/images/kitchen.jpg" alt="image cuisine moderne "  data-cerberus="IMG_produitsADecouvrir">
+                               
+                                 <div class="container-desc ">
+                                    <p class="desc ellipsis">
+                                        <span class="name">
+                                          <h5> Cuisine </h5>
+                                        </span>
+                                    </p>
+                                </div> 
+                                </figure>
+                                
+                             </a>
+                        </li>
+                         <a href="#">
+                                <figure class=" figure-blc ">
+                                    <img class="visuel zoom lazy loaded" src="../assets/images/cleaning_products.jpg" alt="image des produits des ménages "  data-cerberus="IMG_produitsADecouvrir">
+                                <div class="container-desc ">
+                                    <p class="desc ellipsis">
+                                        <span class="name">
+                                           <h5> Ménage </h5>
+                                        </span>
+                                    </p>
+                                </div>
+                                </figure>
+                                
+                             </a>
+                        </li>
+        </ul>
+        </article>
+        </section>
+        {% endblock %}

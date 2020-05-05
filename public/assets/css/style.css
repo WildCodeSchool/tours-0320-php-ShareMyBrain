@@ -1,4 +1,4 @@
-
+/* local font included in here with it own pram */
 @font-face {
     font-family: 'rokkittregular';
     src: url('../fonts/rokkitt-variablefont_wght-webfont.woff2') format('woff2'),
@@ -6,11 +6,13 @@
     font-weight: normal;
     font-style: normal;
 }
+/* a general setting for html and body and paragraph and link */ 
 html , body , p , a  ,  {
 	font-family: 'rokkittregular' sans-serif;
 	font-weight: normal;
     font-style: normal;
 }
+/* the title level 5 font and setting */
 h5{
 	font-family: 'rokkittregular' sans-serif;
 	font-weight: normal;
@@ -31,35 +33,35 @@ h5{
 													/*==================== 
 														Slogan Header 
 													====================== */
-
+/* the parent bloc of header */ 
 .para-slogan-ctn {
 	background: rgba(196, 196, 196, 0.41);
 }
+/* a bloc to place in center the page slogan of the web site */
 .slogan {
-	
 	height: 428px;
 	width: 100%;
+	/* Box model declarations */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	
 	padding-top: 5%;
     padding-bottom: 5%;
-}				                               
+}			
+/* the title of the page and the diff setting for more persinalisation */
 .slogantitle {
-
 width: 100%;
 height: 100%;
 left: calc(50% - 1602px/2 + 0.5px);
 top: calc(50% - 427px/2 - 884.5px);
-
+/* font  declarations */
 font-family: 'rokkittregular', serif;
 text-transform: uppercase;
 font-size: 64px;
 line-height: 73px;
 font-style: normal;
 font-weight: normal;
-
+/* Box model declarations */
 display: flex;
 align-items: center;
 text-align: center;
@@ -67,9 +69,11 @@ text-align: center;
 color: #000000;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }   
+/* animation partie for header in the top of the page */ 
 .tracking-in-contract{-webkit-animation:tracking-in-contract .8s cubic-bezier(.47,0.000,.745,.715) both;animation:tracking-in-contract .8s cubic-bezier(.47,0.000,.745,.715) both}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
  @-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
-.vectors {
+/* they are the setting for the img and humain vector near the slogan content */
+ .vectors {
 	vertical-align: middle;
     border-style: none;
 	width: 80%;
@@ -78,31 +82,38 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .question-mark {
 	margin-top: 30%; 
 }
+/* the form general settig by mergin */ 
 .form-inline{
 	margin-top: 30%;
 }
 													/*==================== 
 														THEMES 
 													====================== */
+ /* Positioning declarations */
+/* the globale bloc for the theme section  */
 .glo-theme {
 	display: grid;
     grid-template-rows: 1fr 70% 1fr;
 }
+/* a bloc that include the first title of the section */
 .themetitle-ctn {
 	padding-top: 2%;
     padding-bottom: 2%;
 }
+/* the setting fot the main title of the section */
 .themetitle {
 	width: 100%;
 	height: 100%;
 	left: calc(50% - 1602px/2 + 0.5px);
-	top: calc(50% - 427px/2 - 884.5px);									
+	top: calc(50% - 427px/2 - 884.5px);
+	/* fonts declarations */							
 	font-family: 'rokkittregular', serif;
 	text-transform: uppercase;
 	font-size: 35px;
 	line-height: 73px;
 	font-style: normal;
-	font-weight: normal;													
+	font-weight: normal;
+	/* Box model declarations */													
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -110,16 +121,20 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	color: #000000;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}          
+	/* the themes presented in the UL */ 
 	.element-ul {
+		/* Box model declarations */
 		display: flex; 
 		justify-content: space-around;
 		list-style: none;
 	}
+
 	.list-elements .element {
 		position: relative;
 		overflow: hidden;
 		max-height: 300px;
 	}
+	/* the diff setting for image in the list */
 	img {
 		border-radius: 30px 30px 0 0;
 	}
@@ -128,10 +143,12 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		width:320px;
 		height:320px;
 	}
+	/* for image in hover mode and change color due to ocapicty */
 	.visuel:hover {
 		opacity: 50%;
 	}
 	.container-desc {
+		/* Box model declarations */
 		background-color: rgba(65, 255, 31, 0.2);
 		justify-content: center;
 		width: 100%;
@@ -146,6 +163,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;}
+	/* the general setting for title of the each element in list */
 	.desc .name {
 			max-height: 3.8rem;
 			display: block;
@@ -154,6 +172,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 													/*==================== 
 														FQUESTION FORM  
 													====================== */
+/* the parent bloc for the section of general form */
 .question-form-ctn {
 width: 1600px;
 height: 601px;
@@ -161,34 +180,42 @@ left: 0px;
 top: 1475px;
 background: rgba(196, 196, 196, 0.4);
 }
+/* Box model declarations for the separator of bloc inside  */
 .seconde-questionaire-ctn  {
 	display: grid;
     grid-template-columns: 20% 80%;
 }
+/* Box model declarations for img and vector in the form section  */
 .bottom-vector-ctn{
 	display: flex;
 	flex-direction: column;
 	padding-top: 2%;
 }
+/* Box model declarations for form  */
 .form-inline {
 	    display: grid;
      grid-template-columns: 1fr 1fr 1.5fr 2fr 1fr;
 }
+/* font declarations for label  */
 label {
 	font-weight: bold;
 }
+/* this  declaration is for theses blocs whos separete input !  */
 .separator-input {
 	margin-right: 2%;
     margin-left: 2%;
 }
+/* a input private declaration for text party and question !  */
 .input-sizer {
 	background: rgba(137, 197, 204, 0.8);
 	border-radius: 22px;
 }
+/* Box model declarations */
 select {
     word-wrap: normal;
     background-color: #69a0bf54;
 }
+/* setting  declarations for button in the last item of the form  */
 .botton {
 background: #40C0E7;
 border-radius: 19px;
