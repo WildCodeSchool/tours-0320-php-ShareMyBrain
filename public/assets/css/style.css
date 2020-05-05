@@ -50,6 +50,7 @@
 		padding-left: 10px;
 	}
 
+
 	#btn-co {
 		width: 18%;
 	}
@@ -115,3 +116,6 @@ h3 {
 	border: 0px;
 }
 
+.btn {
+	margin-left: 10px;
+}
