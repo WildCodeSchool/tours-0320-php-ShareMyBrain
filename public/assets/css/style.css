@@ -10,21 +10,48 @@
 	height: 50px;
 }
 
-.jumbotron {
-	background-color: rgb(255, 255, 255)!important;
-}
 
-#ctc-btn {
-	background-color: rgb(63, 170, 21);
-	border: 0px;
-}
+													/*==================== 
+														NavBar Responsive
+													====================== */
 
-@media screen and (max-width: 991px){
+#btnconnect {
+	padding-right: 10px;
+	}
+												
+/*== Aligner les items au centre du menu burgers === */
+/*== Réduit la taille des boutons connexion/s'inscrire en responsive === */
+/*== Display none du menu burger sur écran ordinateur === */
+/*== SHAREMYBRAIN écrit en + gros === */
 
+											/*== On aimerait mettre les boutons de même taille === */
+
+
+@media screen and (max-width: 767px) {
 	.logoSharemyBrain {
 		display: none;
 	}
-}
+
+	#navbrand {
+		display: flex;
+		margin-right: 3rem;
+		
+	}
+
+	.nav-item {
+		width : 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+
+	#btnconnect {
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+
+} 
+
 													/*==================== 
 														Footer 
 													====================== */
@@ -67,3 +94,16 @@ footer ul{	padding-left: 0;	list-style: none;}
 .btn{background-color: #ff8d1e; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
 }
+
+
+
+.jumbotron {
+	background-color: rgb(255, 255, 255)!important;
+}
+
+#ctc-btn {
+	background-color: rgb(63, 170, 21);
+	border: 0px;
+}
+
+@media screen and (max-width: 991px){
