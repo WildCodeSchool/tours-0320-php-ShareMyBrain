@@ -18,6 +18,13 @@
 	background-color: rgb(63, 170, 21);
 	border: 0px;
 }
+
+@media screen and (max-width: 991px){
+
+	.logoSharemyBrain {
+		display: none;
+	}
+}
 													/*==================== 
 														Footer 
 													====================== */

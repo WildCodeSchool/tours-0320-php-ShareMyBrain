@@ -15,21 +15,20 @@
            <!--<div id="navbar">-->
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success scrolling-navbar">
                 <a class="navbar-brand" href="#">ShareMyBrain</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler align-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <img class="logoSharemyBrain" src="https://zupimages.net/up/20/17/gi9o.png" alt="logo sharemybrain">
-​
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mx-auto topnav">
                         <li class="nav-item active text-center">
-                            <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Accueil<span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item text-center">
                             <a class="nav-link" href="#">Thèmes</a>
                         </li>
                         <li class="nav-item text-center">
-                            <a class="nav-link" href="#">Contactez-nous</a>
+                            {% block linkheader %}{% endblock %}
                         </li>
                     </ul>
                     <ul class="navbar-nav topnav">
@@ -86,7 +85,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget no-box">
                         <h5 class="widget-title">Nous contacter<span></span></h5>
-                        <p><a href="mailto:info@domain.com" title="glorythemes">info@sharemybrain.com</a></p>
+                       {% block linkfooter %}{% endblock %} 
             
                     </div>
                 </div>
