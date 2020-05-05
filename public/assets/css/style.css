@@ -7,7 +7,7 @@
     font-style: normal;
 }
 /* a general setting for html and body and paragraph and link */ 
-html , body , p , a  ,  {
+html , body , p , a {
 	font-family: 'rokkittregular' sans-serif;
 	font-weight: normal;
     font-style: normal;
@@ -22,7 +22,6 @@ h5{
 .topnav a:hover {
 	border-bottom: 10px #F17F42;
 }
-
 													/*==================== 
 														LogoNavbar 
 													====================== */

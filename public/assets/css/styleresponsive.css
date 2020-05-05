@@ -1,13 +1,8 @@
-				/*** RESPONSIVE *****/ 
-				/*
-				####################################################
-							M E D I A  Q U E R I E S
-				####################################################
-				*/
- 
-
-               
-
+/*
+####################################################
+			M E D I A  Q U E R I E S
+####################################################
+*/
 @font-face {
     font-family: 'rokkittregular';
     src: url('../fonts/rokkitt-variablefont_wght-webfont.woff2') format('woff2'),
@@ -15,14 +10,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
  /** for telephone desktop's witdth between 250px and 800px */              
-@media only screen and (max-width: 800px) and (min-width: 250px){
-                    
+@media only screen and (max-width: 800px) and (min-width: 250px){            
 .para-slogan-ctn {
      width: 100%;
     height: 200px;
-    }
+}
 .slogan {
     height: 250px;
 }
@@ -71,8 +64,7 @@
 .seconde-questionaire-ctn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .separator-input {
     margin-bottom: 2%;
@@ -87,7 +79,6 @@
     margin-top: 10%;
 }
 }                    
-
  /** for tablet desktop's witdth between 801px and 1000px */
  @media only screen and (max-width: 1000px) and (min-width: 801px){
 .para-slogan-ctn {
@@ -120,7 +111,6 @@
 .element-ul {
     display: grid;
     grid-template-columns: 1fr
-    grid-auto-rows: auto;
 }
 .figure{
     display: grid;
@@ -148,8 +138,7 @@
     flex-direction: column ! important;
     margin-top: 10%;
 } 
-}
-
+ }
 /** for  desktop's witdth between 1001px and 1200px */              
 @media only screen and (max-width: 1200px) and (min-width: 1001px) {
 label {
@@ -199,6 +188,7 @@ label {
      width: 75%;
 }              
 }
+
                 
                 
                 
