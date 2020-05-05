@@ -51,10 +51,7 @@
 
 } 
 
-.show {
-	padding : 5em;
 
-}
 
 
 
@@ -111,4 +108,8 @@ footer { padding-top: 100%; padding-bottom: 0px;
 
 .btn{background-color: #ff8d1e; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+}
+
+.show {
+	padding : 5em;
 }
