@@ -6,201 +6,199 @@
 				*/
  
 
-                @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
- /** for telephone desktop's witdth between 250px and 800px */
-                
-   @media only screen and (max-width: 800px) and (min-width: 250px){
-                    .para-slogan-ctn {
-                        width: 100%;
-                     height: 200px;
-                    }
-                    .slogan {
-                        height: 250px;
-                    }
-                    .humain1-ctn .humain1-ctn .bottom-vector-ctn {
-                        display: none;
-                    }
-                    .vectors {
-                        display: none;
-                    }
-                    .slogantitle {
-                        font-size: 40px;
-                        height: 70%;
-                        margin-top: 5%;
-                    }
-                    .glo-theme {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .element-ul {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        list-style: none;
-                        padding: 0;
-                    }
-                    .figure{
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        margin: 0;
-                        
-                    }
-                    .figure-blc {
-                        margin-left: 5%;
-                        margin-right: 5%;
-                    }
-                    .visuel {
-                        width: 96%;
-                    }
-                    .container-desc {
-                        width: 96%;
-                    }
-                    .question-form-ctn{
-                        height: 300px;
-                    }
-                    .seconde-questionaire-ctn {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        
-                    }
+               
+
+@font-face {
+    font-family: 'rokkittregular';
+    src: url('../fonts/rokkitt-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/rokkitt-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ /** for telephone desktop's witdth between 250px and 800px */              
+@media only screen and (max-width: 800px) and (min-width: 250px){
                     
-                
-                    .separator-input {
-                        margin-bottom: 2%;
-                    }
-                    .input-sizer {
-                        width: 100%;
-                    }
-                    .form-inline {
-                        display: flex ! important;
-                        justify-content: center ! important;
-                        flex-direction: column ! important;
-                        margin-top: 10%;
-                    }
-                    
-                }
-                /** for tablet desktop's witdth between 801px and 1000px */
-                @media only screen and (max-width: 1000px) and (min-width: 801px){
-                  .para-slogan-ctn {
-                      width: auto;
-                      height: 200px;
-                      
-                  }
-                    .container, .container-md, .container-sm {
-                        max-width: 70%;
-                    }
-                    .slogan {
-                        width: auto;
-                        height: 250px;
-                        display: grid;
-                        grid-template-columns: 20% 80%;
-                    
-                    }
-                    .humain1 {
-                        margin-top: 20%;
-                        width: 45%;
-                    }
-                    .humain2 {
-                        display: none;
-                    }
-                    
-                    .slogantitle {
-                        font-size: 55px;
-                    }
-                    .glo-theme {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .element-ul {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-auto-rows: auto;
-                    }
-                    .figure{
-                        display: grid;
-                        grid-auto-columns: max-content;
-                        grid-auto-rows: max-content;
-                    }
-                    .visuel {
-                        width: 75%;
-                    }
-                    .container-desc {
-                        width: 75%;
-                    }
-                
-                    
-                    .question-form-ctn{
-                        height: 400px;
-                    }
-                    .separator-input {
-                        margin-bottom: 2%;
-                    }
-                    .input-sizer {
-                        width: 100%;
-                    }
-                    .form-inline {
-                        display: flex ! important;
-                        justify-content: center ! important;
-                        flex-direction: column ! important;
-                        margin-top: 10%;
-                    }
-                    
-                }
-                /** for  desktop's witdth between 1001px and 1200px */
-                
-                @media only screen and (max-width: 1200px) and (min-width: 1001px) {
-                    label {
-                        font-size: 0.8rem;
-                    }
-                    .glo-theme {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .element-ul {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-auto-rows: auto;
-                    }
-                    .figure{
-                        display: grid;
-                        grid-auto-columns: max-content;
-                        grid-auto-rows: max-content;
-                    }
-                    .visuel {
-                        width: 75%;
-                    }
-                    .container-desc {
-                        width: 75%;
-                    }
-                
-                
-                }
-                /** for telephone desktop's witdth upper 1200px */
-                @media only screen and (min-width: 1200px) {
-                    .glo-theme {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .element-ul {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr 1fr;
-                        grid-auto-rows: auto;
-                    }
-                    .figure{
-                        display: grid;
-                        grid-auto-columns: max-content;
-                        grid-auto-rows: max-content;
-                    }
-                    .visuel {
-                        width: 75%;
-                    }
-                    .container-desc {
-                        width: 75%;
-                    }
-                
-                }
+.para-slogan-ctn {
+     width: 100%;
+    height: 200px;
+    }
+.slogan {
+    height: 250px;
+}
+.humain1-ctn .humain1-ctn .bottom-vector-ctn {
+    display: none;
+}
+.vectors {
+    display: none;
+}
+.slogantitle {
+    font-size: 40px;
+    height: 70%;
+    margin-top: 5%;
+}
+.glo-theme {
+    display: flex;
+    flex-direction: column;
+}
+.element-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.figure{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    
+}
+.figure-blc {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.visuel {
+    width: 96%;
+}
+.container-desc {
+    width: 96%;
+}
+.question-form-ctn{
+    height: 300px;
+}
+.seconde-questionaire-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.separator-input {
+    margin-bottom: 2%;
+}
+.input-sizer {
+    width: 100%;
+}
+.form-inline {
+    display: flex ! important;
+    justify-content: center ! important;
+    flex-direction: column ! important;
+    margin-top: 10%;
+}
+}                    
+
+ /** for tablet desktop's witdth between 801px and 1000px */
+ @media only screen and (max-width: 1000px) and (min-width: 801px){
+.para-slogan-ctn {
+    width: auto;
+    height: 200px;                  
+    }
+.container, .container-md, .container-sm {
+    max-width: 70%;
+    }
+.slogan {
+    width: auto;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    }
+.humain1 {
+    margin-top: 20%;
+    width: 45%;
+    }
+.humain2 {
+     display: none;
+}          
+.slogantitle {
+    font-size: 55px;
+}
+.glo-theme {
+    display: flex;
+    flex-direction: column;
+}
+.element-ul {
+    display: grid;
+    grid-template-columns: 1fr
+    grid-auto-rows: auto;
+}
+.figure{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
+}
+.visuel {
+    width: 75%;
+}
+.container-desc {
+    width: 75%;
+}                  
+.question-form-ctn{
+    height: 400px;
+}
+.separator-input {
+    margin-bottom: 2%;
+}
+.input-sizer {
+    width: 100%;
+}
+.form-inline {
+    display: flex ! important;
+    justify-content: center ! important;
+    flex-direction: column ! important;
+    margin-top: 10%;
+} 
+}
+
+/** for  desktop's witdth between 1001px and 1200px */              
+@media only screen and (max-width: 1200px) and (min-width: 1001px) {
+label {
+    font-size: 0.8rem;
+}
+.glo-theme {
+    display: flex;
+    flex-direction: column;
+}
+.element-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.figure{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
+}
+.visuel {
+    width: 75%;
+}
+.container-desc {
+     width: 75%;
+}
+}
+/** for telephone desktop's witdth upper 1200px */
+@media only screen and (min-width: 1200px) {
+.glo-theme {
+    display: flex;
+    flex-direction: column;
+}
+.element-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.figure{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
+}
+.visuel {
+    width: 75%;
+}
+.container-desc {
+     width: 75%;
+}              
+}
                 
                 
                 
