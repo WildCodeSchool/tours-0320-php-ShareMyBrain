@@ -2,7 +2,7 @@
 /* local font included in here with it own pram */
 @font-face
 {
-	font-family:'rokkittregular';
+	font-family:"rokkittregular";
 	font-style:normal;
 	font-weight:400;
 	src:url(../fonts/rokkitt-variablefont_wght-webfont.woff2) format(woff2), url(../fonts/rokkitt-variablefont_wght-webfont.woff) format(woff);
@@ -11,14 +11,14 @@
 /*  general setting  */
 html
 {
-	font-family:'rokkittregular' sans-serif;
+	font-family:"rokkittregular" sans-serif;
 	font-style:normal;
 	font-weight:400;
 }
 
 body
 {
-	font-family:'rokkittregular' sans-serif;
+	font-family:"rokkittregular" sans-serif;
 	font-style:normal;
 	font-weight:400;
 }
@@ -28,14 +28,14 @@ img
 }
 p
 {
-	font-family:'rokkittregular' sans-serif;
+	font-family:"rokkittregular" sans-serif;
 	font-style:normal;
 	font-weight:400;
 }
 
 a
 {
-	font-family:'rokkittregular' sans-serif;
+	font-family:"rokkittregular" sans-serif;
 	font-style:normal;
 	font-weight:400;
 }
@@ -43,7 +43,7 @@ a
 h1,h2,h3,h4,h5
 {
 	color:#000;
-	font-family:'rokkittregular' sans-serif;
+	font-family:"rokkittregular" sans-serif;
 	font-style:normal;
 	
 }
@@ -139,7 +139,7 @@ select
 	align-items:center;
 	color:#000;
 	display:flex;
-	font-family:'rokkittregular', serif;
+	font-family:"rokkittregular", serif;
 	font-size:64px;
 	font-style:normal;
 	font-weight:400;
@@ -151,6 +151,7 @@ select
 	text-transform:uppercase;
 	top:calc(50%-427px/2-884.5px);
 	width:100%;
+	
 }
 
 /* animation partie for header in the top of the page */ 
@@ -203,7 +204,6 @@ select
 {
 	-webkit-box-orient:vertical;
 	-webkit-line-clamp:2;
-	display:0;
 	overflow:hidden;
 	text-overflow:ellipsis;
 }
@@ -229,7 +229,7 @@ select
 	align-items:center;
 	color:#000;
 	display:flex;
-	font-family:'rokkittregular', serif;
+	font-family:"rokkittregular", serif;
 	font-size:35px;
 	font-style:normal;
 	font-weight:400;
