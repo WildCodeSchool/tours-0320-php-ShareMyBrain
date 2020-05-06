@@ -10,6 +10,7 @@
 	height: 50px;
 }
 
+
 													/*==================== 
 														NavBar Responsive
 													====================== */
@@ -26,7 +27,7 @@
 											/*== On aimerait mettre les boutons de même taille === */
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 	.logoSharemyBrain {
 		display: none;
 	}
@@ -49,23 +50,12 @@
 		padding-left: 10px;
 	}
 
+
+	#btn-co {
+		width: 18%;
+	}
+
 } 
-
-	
-
-
-
-
-
-
-
-
-
- 
-												
-
-
-
 
 													/*==================== 
 														Footer 
@@ -75,8 +65,8 @@
 
 footer .main-footer{	padding: 20px 0;	background: #252525 ;}
 footer ul{	padding-left: 0;	list-style: none;}
-footer { padding-top: 100%; padding-bottom: 0px;
-}
+
+
 
 
 
@@ -108,4 +98,24 @@ footer { padding-top: 100%; padding-bottom: 0px;
 
 .btn{background-color: #ff8d1e; color:#fff;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+}
+
+
+
+.jumbotron {
+	background-color: rgb(255, 255, 255)!important;
+}
+
+h3 {
+	padding-top: 4% ;
+	padding-bottom: 4%;
+}
+
+#ctc-btn {
+	background-color: rgb(63, 170, 21);
+	border: 0px;
+}
+
+.btn {
+	margin-left: 10px;
 }
