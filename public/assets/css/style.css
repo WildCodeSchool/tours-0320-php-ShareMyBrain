@@ -65,13 +65,53 @@ select
 }
 
 /*==== LogoNavbar ===== */				
+#btnconnect
+{
+	padding-right:10px;
+}
 
 .logoSharemyBrain
- {
-	width: 50px;
-	height: 50px;
-}	
+{
+	height:50px;
+	width:50px;
+}
 
+.topnav a:hover
+{
+	border-bottom:10px #F17F42;
+}
+
+@media screen and max-width 991px
+{
+	#btn-co
+	{
+		width:18%;
+	}
+
+	#btnconnect
+	{
+		padding-bottom:10px;
+		padding-left:10px;
+	}
+
+	#navbrand
+	{
+		display:flex;
+		margin-right:3rem;
+	}
+
+	.logoSharemyBrain
+	{
+		display:none;
+	}
+
+	.nav-item
+	{
+		display:flex;
+		justify-content:center;
+		width:100%;
+	}
+}
 /*=== Slogan Header ==== */
 
 /* the parent bloc of header */
