@@ -34,4 +34,20 @@ class QuestionManager extends AbstractManager
 
         return $statement->fetchAll();
     }
+
+    public function addQuestion(array $question):int
+    {
+
+        $sql= "INSERT INTO " . self::TABLE . " (`content`,`id_theme`,`id_user`,`date`)
+        VALUES (:content,:id_theme,:id_user,:date)";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindValue('content', $question['content'], \PDO::PARAM_STR);
+        $statement->bindValue('id_theme', $question['id_theme'], \PDO::PARAM_INT);
+        $statement->bindValue('id_user', $question['id_user'], \PDO::PARAM_INT);
+        $statement->bindValue('date', $question['date'], \PDO::PARAM_STR);
+
+        if ($statement->execute()) {
+            return (int)$this->pdo->lastInsertId();
+        }
+    }
 }
