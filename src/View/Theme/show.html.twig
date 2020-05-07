@@ -2,12 +2,14 @@
 
 {% block content %}
     <div class="show">
-        <h1>Liste des questions</h1>
+        <h1>Theme : {{ theme.name }}</h1>
             <ul>
                 {% for question in questions %}
-                     <li>{{question.content}}</li>
+                    <li>{{question.content}}</li>
                 {% else %}
                     <li>Nothing to display</li>
                 {% endfor %}
             </ul>
+            <a href="/theme/index">Back</a>
+    </div>
 {% endblock %}

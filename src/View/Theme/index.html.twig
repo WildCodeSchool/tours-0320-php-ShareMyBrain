@@ -1,13 +1,15 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Choisir un thème</h1>
-    <ul>
-        {% for theme in themes %}
-            <li>{{ theme.name }}</li>
-        {% else %}
-            <li>Nothing to display</li>
-        {% endfor %}
-    </ul>
+    <div class="show">
+        <h1>Choisir un thème</h1>
+            <ul>
+                {% for theme in themes %}
+                    <li><a href="/theme/show/{{ theme.id }}">{{ theme.name }}</a></li>
+                {% else %}
+                    <li>Nothing to display</li>
+                {% endfor %}
+            </ul>
+        </div>
 {% endblock %}
 

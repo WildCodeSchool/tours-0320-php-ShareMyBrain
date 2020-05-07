@@ -50,7 +50,6 @@
 		padding-left: 10px;
 	}
 
-
 	#btn-co {
 		width: 18%;
 	}
@@ -100,6 +99,9 @@ footer ul{	padding-left: 0;	list-style: none;}
 .btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
 }
 
+.show {
+	padding : 5em;
+}
 
 
 .jumbotron {
