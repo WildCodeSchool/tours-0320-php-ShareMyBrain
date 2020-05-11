@@ -1,174 +1,131 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-        <title>ShareMyBrain - {% block title %}undefined title{% endblock %}</title>
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/styleresponsive.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="icon" href="/assets/images/favicon.png">  
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ShareMyBrain - {% block title %}undefined title{% endblock %}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/styleresponsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="/assets/images/favicon.png">
+</head>
 
-    <body>                                                 
-        <header>
-           <!--<div id="navbar">-->
-            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-success scrolling-navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand text-white" id="navbrand" href="#">ShareMyBrain</a>
-                
-                <img class="logoSharemyBrain" src="https://zupimages.net/up/20/17/gi9o.png" alt="logo sharemybrain">
-​
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto mx-auto topnav">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Accueil<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Thèmes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contactez-nous</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav topnav" id="bouton-connexion">
-                        <li class="nav-item" id="btnconnect">
-                            <a class="nav-link btn text-white bg-secondary" href="#" data-toggle="modal" data-target="#myModal">Se connecter</a>                  
-                        </li>
-                        <li class="nav-item" id="btncreat">
-                            <a class="nav-link btn text-white bg-dark" href="#" data-toggle="modal" data-target="#myModal">Créer un compte</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-       
-                                             <!-- SLOGAN HEADER --> 
-        <div class="para-slogan-ctn container-fluide " >  
-        <section class=" slogan container " > 
-        
+<body>
+<header>
+    <!--<div id="navbar">-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-success scrolling-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-white" id="navbrand" href="/">ShareMyBrain</a>
+
+        <img class="logoSharemyBrain" src="https://zupimages.net/up/20/17/gi9o.png" alt="logo sharemybrain">
+        ​
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mx-auto topnav">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="/">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/theme/index">Liste complète des thèmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/home/contact">Contactez-nous</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav topnav" id="bouton-connexion">
+                <li class="nav-item" id="btnconnect">
+                    <a class="nav-link btn text-white bg-secondary" href="#" data-toggle="modal" data-target="#myModal">Se connecter</a>
+                </li>
+                <li class="nav-item" id="btncreat">
+                    <a class="nav-link btn text-white bg-dark" href="#" data-toggle="modal" data-target="#myModal">Créer un compte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- SLOGAN HEADER -->
+<div class="para-slogan-ctn container-fluide " >
+    <section class=" slogan container " >
+
         <div class="humain1-ctn">
-        
-        <img class="vectors humain1"
-                src="/assets/images/humain1.png" 
-                alt="une personne assis et repond aux question">
+
+            <img class="vectors humain1"
+                 src="/assets/images/humain1.png"
+                 alt="une personne assis et repond aux question">
         </div>
-        
+
         <div class="slogantitle-ctn">
-        <a href="#">
-        <span class="slogantitle tracking-in-contract " > share my brain </span>
-        </a>
+            <a href="#">
+                <span class="slogantitle tracking-in-contract " > share my brain </span>
+            </a>
         </div>
-        
+
         <div class="humain2-ctn" >
-        <img class="vectors humain2"
-                src="/assets/images/humain2.png" 
-                alt="une personne assis et pose des questions"   >
+            <img class="vectors humain2"
+                 src="/assets/images/humain2.png"
+                 alt="une personne assis et pose des questions"   >
         </div>
 
 
-        </section>
-        </div>
-<<<<<<< HEAD
-        {% block content %}
-        {% endblock %}
-=======
-         {% block content %}
-          {% endblock %}
->>>>>>> parent of 00be74d...  1- update composer elements -2 changed css style coding 3- changed css reposnisve style coding 3- corrected code index.html twing 4- removed some code from layout index
-                                                     <!-- Question form section -->   
-        <section class="question-form-ctn container-fluid ">
-        <div class=" seconde-questionaire-ctn container"  >
-        <div class="bottom-vector-ctn ">
-        <img class="vectors question-mark"
-                src="/assets/images/questionMark.png" 
-                alt="une personne assis et pose des questions"  >
-        <img class="vectors humain3"
-                src="/assets/images/humain3.png" 
-                alt="une personne assis et pose des questions"   >
-        </div>
-             <form  class="form-inline" method="post" style="  display: grid;
-                     grid-template-columns: 1fr 1fr 1.5fr 2fr 1fr; ">
-                    <div class=" separator-input">
-                    <label for="theme">Thème :</label>
-                    </div>
-                    <div class=" separator-input">
-                    <select name="id_theme" id="theme">
-                        {% for theme in themes %}
-                            <option value="{{ theme.id }}">{{ theme.name }}</option>
-                        {% endfor %}
-                    </select>
-                    </div>
-                    <div class=" separator-input">
-                    <label for="content">Votre question :</label>
-                    </div>
-                    <div class=" separator-input">
-                    <input type="text"  class='input-sizer' name="content" value="{{ question.content }}" size="50" required>
-                    </div>
-                    <div class=" separator-input">
-                    <input type="hidden" name="id_user" value=1>
-                    <input class="botton" type="submit" value="Valider">
-                    </div>
-            </form>
-        </div>
-        </section>  
-         
-                                                                <!-- FOOTER -->     
-        <footer id="footer" class="footer-1 page-footer">
-            <div class="main-footer widgets-dark typo-light">
-            <div class="container">
+    </section>
+</div>
+{% block content %}
+{% endblock %}
+<!-- FOOTER -->
+<footer id="footer" class="footer-1 page-footer">
+    <div class="main-footer widgets-dark typo-light">
+        <div class="container">
             <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget subscribe no-box">
-                                <h5 class="widget-title">ShareMyBrain<span></span></h5>
-                                <p>Échanger ses connaissances dans différents domaines, se coucher moins bête, trouver des solutions concrètes , et tout cela grâce à vous. </p>
-                            </div>
-                        </div>
-​
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">ShareMyBrain<span></span></h5>
+                        <p>Échanger ses connaissances dans différents domaines, se coucher moins bête, trouver des solutions concrètes , et tout cela grâce à vous. </p>
+                    </div>
+                </div>
+                ​
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget no-box">
-                            <h5 class="widget-title">Trouvez votre réponse parmi nos thèmes...<span></span></h5>
+                        <h5 class="widget-title">Trouvez votre réponse parmi nos thèmes...<span></span></h5>
                         <ul class="thumbnail-widget">
                             <li>
-                                <div class="thumb-content"><a href="#.">Jardinage</a></div>	
+                                <div class="thumb-content"><a href="/theme/show/1">Jardinage</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content"><a href="#.">Cuisine</a></div>	
+                                <div class="thumb-content"><a href="/theme/show/2">Cuisine</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content"><a href="#.">Bricolage</a></div>	
+                                <div class="thumb-content"><a href="/theme/show/3">Bricolage</a></div>
                             </li>
                             <li>
-                                <div class="thumb-content"><a href="#.">Ménage</a></div>	
+                                <div class="thumb-content"><a href="/theme/show/4">Ménage</a></div>
                             </li>
                         </ul>
                     </div>
                 </div>
-​
+                ​
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget no-box">
                         <h5 class="widget-title">Inscrivez-vous<span></span></h5>
                         <p>Trouver des réponses à vos questions, et aidez les autres.</p>
                     </div>
                 </div>
-​
+                ​
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget no-box">
                         <h5 class="widget-title">Nous contacter<span></span></h5>
-                        <p><a href="mailto:info@domain.com" title="glorythemes">info@sharemybrain.com</a></p>
-            
+                        <p><a class="nav-link text-blue" href="/home/contact">Contactez-nous</a></p>
+
                     </div>
                 </div>
-​
             </div>
-            </div>
-            </div>
-        </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>

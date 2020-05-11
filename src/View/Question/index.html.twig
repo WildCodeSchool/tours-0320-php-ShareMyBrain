@@ -1,12 +1,51 @@
 {% extends 'layout.html.twig' %}
+{% block title %}Accueil{% endblock %}
+ {% block content %}
+     <!-- THEME SECTION  -->
+     <section class="glo-theme">
+         <div class="themetitle-ctn">
+             <span class="themetitle" > Principaux thèmes ! </span>
+         </div>
+         <article class="theme-article-ctn">
+             <ul class="element-ul">
+                 <li class="element">
+                     <a href="/theme/show/3">
+                         <figure class=" figure-blc ">
+                             <img class="visuel zoom lazy loaded" src="../assets/images/tools.jpg" alt="image outil bricolage  "  data-cerberus="IMG_produitsADecouvrir">
+                             <div class="container-desc ">
+                                 <p class="desc ellipsis">
+                                        <span class="name">
+                                           <h5> Bricolage </h5>
+                                        </span>
+                                 </p>
+                             </div>
+                         </figure>
 
-{% block content %}
-    <h1>Liste des questions</h1>
-    <ul>
-        {% for question in questions %}
-            <li>{{question.content}}</li>
-        {% else %}
-            <li>Nothing to display</li>
-        {% endfor %}
-    </ul>
-{% endblock %}
+                     </a>
+                 </li>
+                 <a href="/theme/show/1">
+                     <figure class=" figure-blc ">
+                         <img class="visuel zoom lazy loaded" src="../assets/images/new-outil-de-jardinage.jpg" alt="image d'une pelle du jardinage "  data-cerberus="IMG_produitsADecouvrir">
+                         <div class="container-desc ">
+                             <p class="desc ellipsis overlay">
+                                        <span class="name">
+                                           <h5> Jardinage </h5>
+                                        </span>
+                             </p>
+                         </div>
+                     </figure>
+
+                 </a>
+                 </li>
+                 <li class="element">
+                     <a href="/theme/show/2">
+                         <figure class=" figure-blc ">
+                             <img class="visuel zoom lazy loaded" src="../assets/images/kitchen.jpg" alt="image cuisine moderne "  data-cerberus="IMG_produitsADecouvrir">
+
+                             <div class="container-desc ">
+                                 <p class="desc ellipsis">
+                                        <span class="name">
+                                          <h5> Cuisine </h5>
+                                        </span>
+                                 </p>
+                             </div>
