@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
         <title>ShareMyBrain - Accueil</title>
         <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="icon" href="/assets/images/favicon.png">  
     </head>
@@ -45,8 +46,35 @@
                 </div>
             </nav>
         </header>
+<!-- SLOGAN HEADER -->
+<div class="para-slogan-ctn container-fluide " >
+    <section class=" slogan container " >
 
-        {% block content %}{% endblock %}
+        <div class="humain1-ctn">
+
+            <img class="vectors humain1"
+                 src="/assets/images/humain1.png"
+                 alt="une personne assis et repond aux question">
+        </div>
+
+        <div class="slogantitle-ctn">
+            <a href="#">
+                <span class="slogantitle tracking-in-contract " > share my brain </span>
+            </a>
+        </div>
+
+        <div class="humain2-ctn" >
+            <img class="vectors humain2"
+                 src="/assets/images/humain2.png"
+                 alt="une personne assis et pose des questions"   >
+        </div>
+
+
+    </section>
+</div>
+{% block content %}
+{% endblock %}
+
 
 
                                                                 <!-- FOOTER -->     
