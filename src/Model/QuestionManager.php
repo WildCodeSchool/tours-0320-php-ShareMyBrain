@@ -18,23 +18,9 @@ class QuestionManager extends AbstractManager
     }
 
     /**
-     * @param int $id
+     * @param array $question
+     * @return int
      */
-    public function selectAllByTheme(int $id)
-    {
-        //prepared request
-        $statement = $this->pdo->prepare("SELECT question.id,name, username,content
-        FROM `$this->table`
-        JOIN theme ON theme.id=question.id_theme 
-        JOIN user ON user.id=question.id_user
-        WHERE theme.id=:id");
-
-        $statement->bindValue('id', $id, \PDO::PARAM_INT);
-        $statement->execute();
-
-        return $statement->fetchAll();
-    }
-
     public function addQuestion(array $question):int
     {
 
@@ -49,5 +35,19 @@ class QuestionManager extends AbstractManager
         if ($statement->execute()) {
             return (int)$this->pdo->lastInsertId();
         }
+    }
+
+    public function selectAllByTheme(int $id)
+    {
+        //prepared request
+        $statement = $this->pdo->prepare("SELECT question.id,name, username,content,date
+        FROM question
+        JOIN theme ON theme.id=question.id_theme 
+        JOIN user ON user.id=question.id_user
+        WHERE theme.id=:id");
+        $statement->bindValue('id', $id, \PDO::PARAM_INT);
+        $statement->execute();
+
+        return $statement->fetchAll();
     }
 }

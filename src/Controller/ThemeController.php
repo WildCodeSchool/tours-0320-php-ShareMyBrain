@@ -11,6 +11,7 @@ use App\Model\QuestionManager;
  */
 class ThemeController extends AbstractController
 {
+
     /**
      * Display theme listing
      *
