@@ -1,0 +1,13 @@
+<form method="post">
+    <label for="theme">Thème :</label>
+    <select name="id_theme" id="theme">
+       {% for theme in themes %}
+            <option value="{{ theme.id }}">{{ theme.name }}</option>
+        {% endfor %}
+    </select>
+    <label for="content">Votre question :</label>
+    <input type="text" name="content" value="{{ question.content }}" required>
+    <input type="hidden" name="id_user" value=1>
+    <input type="hidden" name="date" value="2020-01-01"/>
+    <input type="submit" value="Valider">
+</form>

@@ -1,15 +1,22 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <div class="show">
-        <h1>Theme : {{ theme.name }}</h1>
-            <ul>
-                {% for question in questions %}
-                    <li>{{question.content}}</li>
-                {% else %}
-                    <li>Nothing to display</li>
-                {% endfor %}
-            </ul>
-            <a href="/theme/index">Back</a>
+    <div class="show" id="header">
+        <div class="card border-success mb-2">
+            <h1 class="card-header text-center" >Thème : {{ theme.name }}</h1>
+            <div class="card-body">
+                <a href="/theme/index" class="btn btn-success">Revenir aux thèmes</a>
+                <a href="/question/add" class="btn btn-success">Poser une question</a>
+                <ul>
+                    <h5 class="card-title">{% for question in questions %}</h5>
+                    <p class="card-text"><li>{{question.content}}</li></p>
+                    <a href="">Voir les réponses</a> <br>
+                    {% else %}
+                        <li>Nothing to display</li>
+                    {% endfor %}
+                </ul>
+                <a href="#header">Remonter en haut de la page</a>
+            </div>
+        </div>
     </div>
 {% endblock %}

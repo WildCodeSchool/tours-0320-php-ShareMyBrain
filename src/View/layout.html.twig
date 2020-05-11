@@ -15,24 +15,23 @@
            <!--<div id="navbar">-->
 
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-success scrolling-navbar">
-                <a class="navbar-brand text-white" href="#">ShareMyBrain</a>
+                <a class="navbar-brand text-white" href="/">ShareMyBrain</a>
                 <button class="navbar-toggler align-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <img class="logoSharemyBrain" src="https://zupimages.net/up/20/17/gi9o.png" alt="logo sharemybrain">
+                <img class="logoSharemyBrain" src="/assets/images/logosharemybrain.png" alt="logo sharemybrain">
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mx-auto topnav">
 
                         <li class="nav-item active text-center">
-                            <a class="nav-link text-white" href="#">Accueil<span class="sr-only"></span></a>
+                            <a class="nav-link text-white" href="/">Accueil<span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item text-center" >
-                            <a class="nav-link text-white" href="#">Thèmes</a>
+                            <a class="nav-link text-white" href="/theme/index">Liste complète des thèmes</a>
                         </li>
                         <li class="nav-item text-center">
-                            {% block linkheader %}{% endblock %}
-                        </li>
+                            <a class="nav-link text-white" href="/home/contact">Nous contacter</a>
                     </ul>
                     <ul class="navbar-nav topnav">
                         <li class="nav-item">
@@ -92,8 +91,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget no-box">
                         <h5 class="widget-title">Nous contacter<span></span></h5>
-                       {% block linkfooter %}{% endblock %} 
-            
+                        <p><a class="nav-link text-blue" href="/home/contact">Contactez-nous</a></p>
                     </div>
                 </div>
 ​

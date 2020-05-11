@@ -2,14 +2,19 @@
 
 {% block content %}
     <div class="show">
-        <h1>Choisir un thème</h1>
-            <ul>
-                {% for theme in themes %}
-                    <li><a href="/theme/show/{{ theme.id }}">{{ theme.name }}</a></li>
-                {% else %}
-                    <li>Nothing to display</li>
-                {% endfor %}
-            </ul>
+        <div class="card border-success mb-2 text-center">
+            <h1 class="card-header">Choisir un thème</h1>
+            <div class="card-body">
+                <ul>
+                    {% for theme in themes %}
+                        <a href="/theme/show/{{ theme.id }}" class="btn btn-success">{{ theme.name }}</a>
+                    {% else %}
+                        <a href="/theme/show/{{ theme.id }}" class="btn btn-success">{{ theme.name }}</a>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
+        <a href="/question/add" class="btn btn-success">Poser une question</a>
+    </div>
 {% endblock %}
 
