@@ -1,474 +1,264 @@
-
 /* local font included in here with it own pram */
-@font-face
-{
-	font-family:"rokkittregular";
-	font-style:normal;
-	font-weight:400;
-	src:url(../fonts/rokkitt-variablefont_wght-webfont.woff2) format(woff2), url(../fonts/rokkitt-variablefont_wght-webfont.woff) format(woff);
+@font-face {
+    font-family: 'rokkittregular';
+    src: url('../fonts/rokkitt-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/rokkitt-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
-/*  general setting  */
-html
-{
-	font-family:"rokkittregular" sans-serif;
-	font-style:normal;
-	font-weight:400;
+/* a general setting for html and body and paragraph and link */ 
+html , body , p , a {
+	font-family: 'rokkittregular' sans-serif;
+	font-weight: normal;
+    font-style: normal;
 }
-
-body
-{
-	font-family:"rokkittregular" sans-serif;
-	font-style:normal;
-	font-weight:400;
+/* the title level 5 font and setting */
+h5{
+	font-family: 'rokkittregular' sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
 }
-img
-{
-	border-radius:30px 30px 0 0;
+.topnav a:hover {
+	border-bottom: 10px #F17F42;
 }
-p
-{
-	font-family:"rokkittregular" sans-serif;
-	font-style:normal;
-	font-weight:400;
+													/*==================== 
+														LogoNavbar 
+													====================== */
+.logoSharemyBrain {
+	width: 50px;
+	height: 50px;
+}												
+													/*==================== 
+														Slogan Header 
+													====================== */
+/* the parent bloc of header */ 
+.para-slogan-ctn {
+	background: rgba(196, 196, 196, 0.41);
 }
-
-a
-{
-	font-family:"rokkittregular" sans-serif;
-	font-style:normal;
-	font-weight:400;
-}
-
-h1,h2,h3,h4,h5
-{
-	color:#000;
-	font-family:"rokkittregular" sans-serif;
-	font-style:normal;
-	
-}
-
-label
-{
-	font-weight:700;
-}
-
-select
-{
-	background-color:#69a0bf54;
-	word-wrap:normal;
-}
-
-.topnav a:hover
-{
-	border-bottom:10px #F17F42;
-}
-
-/*==== LogoNavbar ===== */				
-#btnconnect
-{
-	padding-right:10px;
-}
-
-.logoSharemyBrain
-{
-	height:50px;
-	width:50px;
-}
-
-.topnav a:hover
-{
-	border-bottom:10px #F17F42;
-}
-
-@media screen and (max-width: 991px)
-{
-	#btn-co
-	{
-		width:18%;
-	}
-
-	#btnconnect
-	{
-		padding-bottom:10px;
-		padding-left:10px;
-	}
-
-	#navbrand
-	{
-		display:flex;
-		margin-right:3rem;
-	}
-
-	.logoSharemyBrain
-	{
-		display:none;
-	}
-
-	.nav-item
-	{
-		display:flex;
-		justify-content:center;
-		width:100%;
-	}
-}
-/*=== Slogan Header ==== */
-
-/* the parent bloc of header */
-.para-slogan-ctn
-{
-	background:rgba(196,196,196,0.41);
-}
-
 /* a bloc to place in center the page slogan of the web site */
-.slogan
-{
+.slogan {
+	height: 428px;
+	width: 100%;
 	/* Box model declarations */
-	display:flex;
-	flex-direction:row;
-	height:428px;
-	justify-content:center;
-	padding-bottom:5%;
-	padding-top:5%;
-	width:100%;
-}
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 5%;
+    padding-bottom: 5%;
+}			
 /* the title of the page and the diff setting for more persinalisation */
-.slogantitle
-{
-	align-items:center;
-	color:#000;
-	display:flex;
-	font-family:"rokkittregular", serif;
-	font-size:64px;
-	font-style:normal;
-	font-weight:400;
-	height:100%;
-	left:calc(50%-1602px/2+0.5px);
-	line-height:73px;
-	text-align:center;
-	text-shadow:0 4px 4px rgba(0,0,0,0.25);
-	text-transform:uppercase;
-	top:calc(50%-427px/2-884.5px);
-	width:100%;
-	
-}
+.slogantitle {
+width: 100%;
+height: 100%;
+left: calc(50% - 1602px/2 + 0.5px);
+top: calc(50% - 427px/2 - 884.5px);
+/* font  declarations */
+font-family: 'rokkittregular', serif;
+text-transform: uppercase;
+font-size: 64px;
+line-height: 73px;
+font-style: normal;
+font-weight: normal;
+/* Box model declarations */
+display: flex;
+align-items: center;
+text-align: center;
 
+color: #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}   
 /* animation partie for header in the top of the page */ 
 .tracking-in-contract{-webkit-animation:tracking-in-contract .8s cubic-bezier(.47,0.000,.745,.715) both;animation:tracking-in-contract .8s cubic-bezier(.47,0.000,.745,.715) both}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
  @-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
-
 /* they are the setting for the img and humain vector near the slogan content */
-.question-mark
-{
-	margin-top:30%;
+ .vectors {
+	vertical-align: middle;
+    border-style: none;
+	width: 80%;
+	margin-top: 20%;
+}	
+.question-mark {
+	margin-top: 30%; 
 }
-
-.vectors
-{
-	border-style:none;
-	margin-top:20%;
-	vertical-align:middle;
-	width:80%;
+/* the form general settig by mergin */ 
+.form-inline{
+	margin-top: 30%;
 }
-
-/* ===== THEMES ====== */
-		
-/* Positioning declarations  and the globale bloc for the theme section  */
-.glo-theme
-{
-	display:grid;
-	grid-template-rows:1fr 70% 1fr;
+													/*==================== 
+														THEMES 
+													====================== */
+ /* Positioning declarations */
+/* the globale bloc for the theme section  */
+.glo-theme {
+	display: grid;
+    grid-template-rows: 1fr 70% 1fr;
 }
-
-.container-desc
-{
-	align-items:center;
-	background-color:rgba(65,255,31,0.2);
-	display:flex;
-	justify-content:center;
-	padding-top:5%;
-	transition:all ease 200ms;
-	width:100%;
+/* a bloc that include the first title of the section */
+.themetitle-ctn {
+	padding-top: 2%;
+    padding-bottom: 2%;
 }
-
-/* the general setting for title of the each element in list */
-.desc .name
-{
-	display:block;
-	max-height:3.8rem;
-	overflow:hidden;
-}
-
-.desc.ellipsis
-{
-	-webkit-box-orient:vertical;
-	-webkit-line-clamp:2;
-	overflow:hidden;
-	text-overflow:ellipsis;
-}
-
-.element-ul
-{
-	display:flex;
-	justify-content:space-around;
-	list-style:none;
-}
-
-
-.list-elements .element
-{
-	max-height:300px;
-	overflow:hidden;
-	position:relative;
-}
-
 /* the setting fot the main title of the section */
-.themetitle
-{
-	align-items:center;
-	color:#000;
-	display:flex;
-	font-family:"rokkittregular", serif;
-	font-size:35px;
-	font-style:normal;
-	font-weight:400;
-	height:100%;
-	justify-content:center;
-	left:calc(50%-1602px/2+0.5px);
-	line-height:73px;
-	text-align:center;
-	text-shadow:0 4px 4px rgba(0,0,0,0.25);
-	text-transform:uppercase;
-	top:calc(50%-427px/2-884.5px);
-	width:100%;
+.themetitle {
+	width: 100%;
+	height: 100%;
+	left: calc(50% - 1602px/2 + 0.5px);
+	top: calc(50% - 427px/2 - 884.5px);
+	/* fonts declarations */							
+	font-family: 'rokkittregular', serif;
+	text-transform: uppercase;
+	font-size: 35px;
+	line-height: 73px;
+	font-style: normal;
+	font-weight: normal;
+	/* Box model declarations */													
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;											
+	color: #000000;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}          
+	/* the themes presented in the UL */ 
+	.element-ul {
+		/* Box model declarations */
+		display: flex; 
+		justify-content: space-around;
+		list-style: none;
+	}
+
+	.list-elements .element {
+		position: relative;
+		overflow: hidden;
+		max-height: 300px;
+	}
+	/* the diff setting for image in the list */
+	img {
+		border-radius: 30px 30px 0 0;
+	}
+	.visuel{
+		border-radius: 50px 50px 0 0;
+		width:320px;
+		height:320px;
+	}
+	/* for image in hover mode and change color due to ocapicty */
+	.visuel:hover {
+		opacity: 50%;
+	}
+	.container-desc {
+		/* Box model declarations */
+		background-color: rgba(65, 255, 31, 0.2);
+		justify-content: center;
+		width: 100%;
+		align-items: center;
+		transition: all ease 200ms;
+		display: flex;
+		padding-top: 5%;
+	}
+	.desc.ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;}
+	/* the general setting for title of the each element in list */
+	.desc .name {
+			max-height: 3.8rem;
+			display: block;
+			overflow: hidden;
+		}
+													/*==================== 
+														FQUESTION FORM  
+													====================== */
+/* the parent bloc for the section of general form */
+.question-form-ctn {
+width: 1600px;
+height: 601px;
+left: 0px;
+top: 1475px;
+background: rgba(196, 196, 196, 0.4);
+}
+/* Box model declarations for the separator of bloc inside  */
+.seconde-questionaire-ctn  {
+	display: grid;
+    grid-template-columns: 20% 80%;
+}
+/* Box model declarations for img and vector in the form section  */
+.bottom-vector-ctn{
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+}
+/* Box model declarations for form  */
+.form-inline {
+	    display: grid;
+     grid-template-columns: 1fr 1fr 1.5fr 2fr 1fr;
+}
+/* font declarations for label  */
+label {
+	font-weight: bold;
+}
+/* this  declaration is for theses blocs whos separete input !  */
+.separator-input {
+	margin-right: 2%;
+    margin-left: 2%;
+}
+/* a input private declaration for text party and question !  */
+.input-sizer {
+	background: rgba(137, 197, 204, 0.8);
+	border-radius: 22px;
+}
+/* Box model declarations */
+select {
+    word-wrap: normal;
+    background-color: #69a0bf54;
+}
+/* setting  declarations for button in the last item of the form  */
+.botton {
+background: #40C0E7;
+border-radius: 19px;
+width: 100%;
 }
 
-.themetitle-ctn
-{
-	padding-bottom:2%;
-	padding-top:2%;
-}
-
-/* the private setting for image in the list */
-.visuel
-{
-	border-radius:50px 50px 0 0;
-	height:320px;
-	width:320px;
-}
-
-.visuel:hover
-{
-	opacity:50%;
-}
-
-/*=== QUESTION FORM ==== */
-.bottom-vector-ctn
-{
-	display:flex;
-	flex-direction:column;
-	padding-top:2%;
-}
-
-.botton
-{
-	background:#40C0E7;
-	border-radius:19px;
-	width:100%;
-}
-
-/* the form general settig */
-.form-inline
-{
-	display:grid;
-	grid-template-columns:1fr 1fr 1.5fr 2fr 1fr;
-	margin-top:30%;
-}
- 
-.input-sizer
-{
-	background:rgba(137,197,204,0.8);
-	border-radius:22px;
-}
-
-.question-form-ctn
-{
-	background:rgba(196,196,196,0.4);
-	height:601px;
-	left:0;
-	top:1475px;
-	width:1600px;
-}
-
-.seconde-questionaire-ctn
-{
-	display:grid;
-	grid-template-columns:20% 80%;
-}
-
-.separator-input
-{
-	margin-left:2%;
-	margin-right:2%;
-}
-
-/*==== Footer ===== */
+													/*==================== 
+														Footer 
+													====================== */
 
 /* Main Footer */
-footer
-{
-	padding-bottom:0;
+footer .main-footer{	padding: 20px 0;	background: #252525 ;}
+footer ul{	padding-left: 0;	list-style: none;}
+footer {  padding-bottom: 0px;
 }
 
-footer .main-footer
-{
-	background:#252525;
-	padding:20px 0;
-}
 
-footer ul
-{
-	list-style:none;
-	padding-left:0;
-}
 
-/*==== Widgets / Footer ====== */
-.btn
-{
-	background-color:#ff8d1e;
-	color:#fff;
-}
+													/*==================== 
+														Widgets / Footer 
+													====================== */
 
-.btn.active
-{
-	background:#4b92dc;
-	color:#fff;
-}
+.widget{	padding: 20px;	margin-bottom: 40px;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget li a{	color: #ff8d1e;}
+.widget li a:hover{	color: #4b92dc;}
+.widget-title {margin-bottom: 20px;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: right;	background: #7f7f7f;}
 
-.btn:focus
-{
-	background:#4b92dc;
-	color:#fff;
-}
 
-.btn:hover
-{
-	background:#4b92dc;
-	color:#fff;
-}
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff;}
 
-.typo-light div
-{
-	color:#fff;
-}
 
-.typo-light h5
-{
-	color:#fff;
-}
-
-.typo-light h6
-{
-	color:#fff;
-}
-
-.typo-light p
-{
-	color:#fff;
-}
-
-.typo-light small
-{
-	color:#fff;
-}
-
-.typo-light span
-{
-	color:#fff;
-}
-
-.widget
-{
-	margin-bottom:40px;
-	padding:20px;
-}
-
-.widget .badge
-{
-	background:#7f7f7f;
-	float:right;
-}
-
-.widget li a
-{
-	color:#ff8d1e;
-}
-
-.widget li a:hover
-{
-	color:#4b92dc;
-}
-
-.widget-title
-{
-	margin-bottom:20px;
-}
-
-.widget-title span
-{
-	background:#839FAD none repeat scroll 0 0;
-	display:block;
-	height:1px;
-	margin-top:25px;
-	position:relative;
-	width:20%;
-}
-
-.widget-title span::after
-{
-	background:inherit;
-	content:"";
-	height:inherit;
-	position:absolute;
-	top:-4px;
-	width:50%;
-}
-
-.widget-title.text-center span
-{
-	left:0;
-	margin-left:auto;
-	margin-right:auto;
-	right:0;
-}
-
-.widget-title.text-center span::after
-{
-	left:0;
-	margin-left:auto;
-	margin-right:auto;
-	right:0;
-}
-
-.widget.no-box
-{
-	-moz-box-shadow:none;
-	-ms-box-shadow:none;
-	-o-box-shadow:none;
-	-webkit-box-shadow:none;
-	background-color:transparent;
-	box-shadow:none;
-	margin-bottom:40px;
-	padding:0;
-}
-
-.widget.subscribe p
-{
-	margin-bottom:18px;
-}
-
-.widget.widget-last
-{
-	margin-bottom:0;
+.btn{background-color: #ff8d1e; color:#fff;}
+.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
 }
