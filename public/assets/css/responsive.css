@@ -1,10 +1,12 @@
 /*###########M E D I A  Q U E R I E S##########################*/
-@font-face
-{
-	font-family: 'rokkittregular';
-	src: url('../fonts/rokkitt-variablefont_wght-webfont.woff2') format('woff2'),url('../fonts/rokkitt-variablefont_wght-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('../fonts/Rokkitt-Regular.eot');
+    src: url('../fonts/Rokkitt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Rokkitt-Regular.woff') format('woff'),
+        url('../fonts/Rokkitt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /** for telephone desktop's witdth between 250px and 800px */
@@ -50,7 +52,6 @@
 		flex-direction: column;
 		justify-content: space-around;
 		list-style: none;
-		padding: 0;
 	}
 
 	.figure
@@ -155,7 +156,9 @@
 	.element-ul
 	{
 		display: grid;
-	grid-template-columns: 1fr}
+        grid-template-columns: 1fr;
+        list-style: none;
+    }
 
 	.figure
 	{
@@ -217,7 +220,8 @@
 	{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-auto-rows: auto;
+        grid-auto-rows: auto;
+        list-style: none;
 	}
 
 	.figure
@@ -240,18 +244,37 @@
 
 /** for telephone desktop's witdth upper 1200px */
 @media only screen and (min-width: 1200px)
-{
+{   .para-slogan-ctn
+    {
+        background-color: rgb(236, 236, 236);
+    }
 	.glo-theme
 	{
 		display: flex;
 		flex-direction: column;
-	}
+    }
+    .humain1-ctn
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .humain2-ctn
+    {
+        display: flex;
+        justify-content: center;
+    }
 
+    .slogantitle-ctn 
+    {
+        display: flex;
+        align-self: center;
+    }
 	.element-ul
 	{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-auto-rows: auto;
+        grid-auto-rows: auto;
+        list-style: none;
 	}
 
 	.figure
@@ -263,11 +286,19 @@
 
 	.visuel
 	{
-		width: 75%;
+	    border-radius:50px 50px 0 0;
+	    height: 220px;
+        width: 250px;;
+
 	}
 
 	.container-desc
 	{
 		width: 75%;
-	}
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
 }
