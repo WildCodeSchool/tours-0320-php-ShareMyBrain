@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<div class="show">
+    <div class="card border-success mb-2 text-center">
+        <h1 class="card-header">{{ question.content }}</h1>
+        <div class="card-body">
+            <h5 class="card-title">Poster une réponse</h5>
+            <p class="card-text">{% include 'Answer/_form.html.twig' %}</p>
+        </div>
+    </div>
+    <a href="/theme/index" class="btn btn-success">Retour à la liste des thèmes</a>
+    <a href="/answer/show/{{ question.id }}" class="btn btn-success">Retour à la question</a>
+</div>
+{% endblock %}

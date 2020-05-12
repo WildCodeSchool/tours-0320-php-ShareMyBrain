@@ -30,4 +30,19 @@ class AnswerManager extends AbstractManager
 
         return $statement->fetchAll();
     }
+
+    public function addAnswer(array $answer):int
+    {
+        $sql = "INSERT INTO " . self::TABLE . " (`content`,`id_user`,`id_question`,date)
+        VALUES (:content,:id_user,:id_question,:date)";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindValue('content', $answer['content'], \PDO::PARAM_STR);
+        $statement->bindValue('id_user', $answer['id_user'], \PDO::PARAM_INT);
+        $statement->bindValue('id_question', $answer['id_question'], \PDO::PARAM_INT);
+        $statement->bindValue('date', $answer['date'], \PDO::PARAM_STR);
+
+        if ($statement->execute()) {
+            return (int)$this->pdo->lastInsertId();
+        }
+    }
 }

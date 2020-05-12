@@ -1,0 +1,9 @@
+<form method="post">
+    <label for="date">Date du jour : {{ "now"|date("d/m/Y") }}</label>
+    <label for="content">Votre réponse :</label>
+    <input type="text" name="content" value="{{ answer.content }}" required>
+    <input type="hidden" name="id_question" value="{{ question.id }}">
+    <input type="hidden" name="id_user" value=1>
+    <input type="hidden" name="date" value="{{ "now"|date("Y-m-d") }}"/>
+    <input type="submit" value="Valider">
+</form>
