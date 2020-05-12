@@ -1,31 +1,56 @@
-.topnav a:hover {
-	border-bottom: 10px #F17F42;
+@font-face {
+	font-family: 'Rokkitt';
+	src: url("/public/assets/fonts/Rokkitt-Regular.eot");
+	src: url("/public/assets/fonts/Rokkitt-Regular.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/Rokkitt-Regular.woff") format('woff'), url("/public/assets/fonts/Rokkitt-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-													/*==================== 
-														LogoNavbar 
-													====================== */
+/*  general setting  */
+html {
+	font-style: normal;
+	font-weight: 400;
+}
+
+img {
+	border-radius: 30px 30px 0 0;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+}
+
+h3 {
+	color: #000;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2, h4, h5 {
+	color: #000;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+h6 {
+	color: #000;
+	font-style: normal;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+/*==== LogoNavbar ===== */
 .logoSharemyBrain {
 	width: 50px;
 	height: 50px;
 }
 
-
-													/*==================== 
-														NavBar Responsive
-													====================== */
-
 #btnconnect {
 	padding-right: 10px;
-	}
-												
-/*== Aligner les items au centre du menu burgers === */
-/*== Réduit la taille des boutons connexion/s'inscrire en responsive === */
-/*== Display none du menu burger sur écran ordinateur === */
-/*== SHAREMYBRAIN écrit en + gros === */
-
-											/*== On aimerait mettre les boutons de même taille === */
-
+}
 
 @media screen and (max-width: 991px) {
 	.logoSharemyBrain {
@@ -35,15 +60,13 @@
 	#navbrand {
 		display: flex;
 		margin-right: 3rem;
-		
 	}
 
 	.nav-item {
-		width : 100%;
+		width: 100%;
 		display: flex;
 		justify-content: center;
 	}
-
 
 	#btnconnect {
 		padding-bottom: 10px;
@@ -53,71 +76,238 @@
 	#btn-co {
 		width: 18%;
 	}
+}
 
-} 
+/*=== Slogan Header ==== */
+.humain1 {
+	border-style: none;
+	margin-top: 30%;
+	vertical-align: middle;
+	width: 50%;
+}
 
-													/*==================== 
-														Footer 
-													====================== */
+.humain2 {
+	border-style: none;
+	margin-top: 30%;
+	vertical-align: middle;
+	width: 50%;
+}
 
 /* Main Footer */
+footer .main-footer {
+	padding: 20px 0;
+	background: #252525;
+}
 
-footer .main-footer{	padding: 20px 0;	background: #252525 ;}
-footer ul{	padding-left: 0;	list-style: none;}
+footer ul {
+	padding-left: 0;
+	list-style: none;
+}
 
+.widget {
+	padding: 20px;
+	margin-bottom: 40px;
+}
 
+.widget.widget-last {
+	margin-bottom: 0;
+}
 
+.widget.no-box {
+	padding: 0;
+	background-color: transparent;
+	margin-bottom: 40px;
+	box-shadow: none;
+}
 
+.widget.subscribe p {
+	margin-bottom: 18px;
+}
 
-													/*==================== 
-														Widgets / Footer 
-													====================== */
+.widget li a {
+	color: #ff8d1e;
+}
 
-.widget{	padding: 20px;	margin-bottom: 40px;}
-.widget.widget-last{	margin-bottom: 0px;}
-.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
-	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
-.widget.subscribe p{	margin-bottom: 18px;}
-.widget li a{	color: #ff8d1e;}
-.widget li a:hover{	color: #4b92dc;}
-.widget-title {margin-bottom: 20px;}
-.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
-.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
-.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
-.widget .badge{	float: right;	background: #7f7f7f;}
+.widget li a:hover {
+	color: #4b92dc;
+}
 
+.widget-title {
+	margin-bottom: 20px;
+}
 
-.typo-light h5, 
-.typo-light h6,
-.typo-light p,
-.typo-light div,
-.typo-light span,
-.typo-light small{	color: #fff;}
+.widget-title span {
+	background: none 0 0 repeat scroll #839FAD;
+	display: block;
+	height: 1px;
+	margin-top: 25px;
+	position: relative;
+	width: 20%;
+}
 
+.widget-title span::after {
+	background: inherit;
+	content: "";
+	height: inherit;
+	position: absolute;
+	top: -4px;
+	width: 50%;
+}
 
-.btn{background-color: #ff8d1e; color:#fff;}
-.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+.widget-title.text-center span, .widget-title.text-center span::after {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.widget .badge {
+	float: right;
+	background: #7f7f7f;
+}
+
+.typo-light h5, .typo-light h6, .typo-light p, .typo-light div, .typo-light span, .typo-light small {
+	color: #fff;
+}
+
+/* PAGE CONTACT and PAGE ERREUR*/
+.btn {
+	background-color: #ff8d1e;
+	color: #fff;
+}
+
+.btn:hover, .btn:focus, .btn.active {
+	background: #4b92dc;
+	color: #fff;
 }
 
 .show {
-	padding : 5em;
+	padding: 5em;
 }
 
-
 .jumbotron {
-	background-color: rgb(255, 255, 255)!important;
+	background-color: rgb(255, 255, 255) !important;
 }
 
 h3 {
-	padding-top: 4% ;
+	padding-top: 4%;
 	padding-bottom: 4%;
 }
 
 #ctc-btn {
 	background-color: rgb(63, 170, 21);
-	border: 0px;
+	border: 0;
 }
 
 .btn {
 	margin-left: 10px;
 }
+/*PAGE ERREUR*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#notfound {
+	position: relative;
+	height: 100vh;
+}
+
+#notfound .notfound {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.notfound {
+	max-width: 520px;
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.notfound .notfound-404 {
+	position: relative;
+	height: 200px;
+	margin: 0 auto 20px;
+	z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 236px;
+	font-weight: 200;
+	margin: 0;
+	color: #211b19;
+	text-transform: uppercase;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.notfound .notfound-404 h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #211b19;
+	background: #fff;
+	padding: 10px 5px;
+	margin: auto;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.notfound a {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 13px 23px;
+	background: #ff6300;
+	font-size: 18px;
+	transition: all 0.2s;
+}
+
+.notfound a:hover {
+	color: #ff6300;
+	background: #211b19;
+}
+
+@media only screen and (max-width: 767px) {
+	.notfound .notfound-404 h1 {
+		font-size: 148px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.notfound .notfound-404 {
+		height: 148px;
+		margin: 0 auto 10px;
+	}
+
+	.notfound .notfound-404 h1 {
+		font-size: 86px;
+	}
+
+	.notfound .notfound-404 h2 {
+		font-size: 16px;
+	}
+
+	.notfound a {
+		padding: 7px 15px;
+		font-size: 14px;
+	}
+}
+	

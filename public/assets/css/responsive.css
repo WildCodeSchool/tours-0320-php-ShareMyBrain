@@ -1,0 +1,303 @@
+/*###########M E D I A  Q U E R I E S##########################*/
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/public/assets/fonts/Rokkitt-Regular.eot');
+    src: url('/public/assets/fonts/Rokkitt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/public/assets/fonts/Rokkitt-Regular.woff') format('woff'),
+        url('/public/assets/fonts/Rokkitt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** for telephone desktop's witdth between 250px and 800px */
+@media only screen and (max-width: 800px) and (min-width: 250px)
+{
+	.para-slogan-ctn
+	{
+		width: 100%;
+        height: 200px;
+        background-color: rgb(236, 236, 236);
+    }
+    
+
+	.slogan
+	{
+		height: 250px;
+	}
+
+	.humain1-ctn .humain1-ctn .bottom-vector-ctn
+	{
+		display: none;
+	}
+
+	.vectors
+	{
+		display: none;
+	}
+
+	.slogantitle
+	{
+		font-size: 40px;
+		height: 70%;
+		margin-top: 5%;
+	}
+
+	.glo-theme
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.element-ul
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		list-style: none;
+	}
+
+	.figure
+	{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.figure-blc
+	{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.visuel
+	{
+		width: 96%;
+	}
+
+	.container-desc
+	{
+		width: 96%;
+    }
+    .slogantitle-ctn 
+    {
+        text-align: center;
+        padding-top: 20%
+    }
+
+	
+}
+
+/** for tablet desktop's witdth between 801px and 1000px */
+@media only screen and (max-width: 1000px) and (min-width: 801px)
+{
+	.para-slogan-ctn
+	{
+        background-color: rgb(236, 236, 236);
+		width: auto;
+		height: 200px;
+    }
+    .slogantitle-ctn
+    {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+	.container, .container-md, .container-sm
+	{
+		max-width: 70%;
+	}
+
+	.slogan
+	{
+		width: auto;
+		height: 250px;
+		display: grid;
+        grid-template-columns: 20% 80%;
+        padding-top: 8%;
+	}
+
+	.humain1
+	{
+		margin-top: 20%;
+        width: 45%;
+        text-align: center;
+	}
+
+	.humain2
+	{
+		display: none;
+	}
+
+	.slogantitle
+	{
+		font-size: 55px;
+	}
+
+	.glo-theme
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.element-ul
+	{
+		display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+    }
+
+	.figure
+	{
+		display: grid;
+		grid-auto-columns: max-content;
+		grid-auto-rows: max-content;
+	}
+
+	.visuel
+	{
+		width: 75%;
+	}
+
+	.container-desc
+	{
+		width: 75%;
+	}
+
+}
+
+/** for  desktop's witdth between 1001px and 1200px */
+@media only screen and (max-width: 1200px) and (min-width: 1001px)
+{
+    .para-slogan-ctn
+    {
+        background-color: rgb(236, 236, 236);
+    }
+
+    .slogantitle-ctn
+    {
+        display: flex;
+        align-self: center;
+    }
+
+    .slogan 
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .humain1-ctn
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .humain2-ctn
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .humain1
+    {
+        text-align: center;
+    }
+	label
+	{
+		font-size: 0.8rem;
+	}
+
+	.glo-theme
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.element-ul
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        list-style: none;
+	}
+
+	.figure
+	{
+		display: grid;
+		grid-auto-columns: max-content;
+		grid-auto-rows: max-content;
+	}
+
+	.visuel
+	{
+        height: 220px;
+        width: 250px;
+        margin-left: 15%;
+	}
+
+	.container-desc
+	{
+		width: 75%;
+	}
+}
+
+/** for telephone desktop's witdth upper 1200px */
+@media only screen and (min-width: 1200px)
+{   .para-slogan-ctn
+    {
+        background-color: rgb(236, 236, 236);
+    }
+	.glo-theme
+	{
+		display: flex;
+		flex-direction: column;
+    }
+    .humain1-ctn
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .humain2-ctn
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slogantitle-ctn 
+    {
+        display: flex;
+        align-self: center;
+    }
+	.element-ul
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        list-style: none;
+	}
+
+	.figure
+	{
+		display: grid;
+		grid-auto-columns: max-content;
+		grid-auto-rows: max-content;
+	}
+
+	.visuel
+	{
+	    border-radius:50px 50px 0 0;
+	    height: 220px;
+        width: 250px;;
+
+	}
+
+	.container-desc
+	{
+		width: 75%;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
