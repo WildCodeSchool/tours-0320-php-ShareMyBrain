@@ -19,17 +19,15 @@
                     <td>{{answer.content}}</td>
                     <td>{{answer.username}}</td>
                     <td>{{ answer.date|date("d/m/Y") }}</td>
-                    <td><a href="#" class="btn btn-success">Ajouter une réponse</a></td>
                 </tr>
                 {% else %}
                     <p>Pas encore de réponse !</p>
-                    <a href="#" class="btn btn-success">Répondre !</a>
                 {% endfor %}
                 </tbody>
             </table>
         </div>
+        <a href="/answer/add/{{ question.id }}" class="btn btn-success">Ajouter une réponse</a>
         <a href="/theme/index" class="btn btn-success">Retour à la liste des thèmes</a>
         <a href="#header">Remonter en haut de la page</a>
     </div>
 {% endblock %}
-
