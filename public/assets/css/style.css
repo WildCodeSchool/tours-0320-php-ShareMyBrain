@@ -18,6 +18,7 @@ img {
 p {
 	font-style: normal;
 	font-weight: 400;
+	font-family: 'kalamregular', cursive;
 }
 
 h3 {
@@ -25,6 +26,7 @@ h3 {
 	font-style: normal;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: 'kalamregular', cursive;
 }
 
 h2, h4, h5 {
@@ -36,9 +38,8 @@ h2, h4, h5 {
 h6 {
 	color: #000;
 	font-style: normal;
-	text-align: center;
 	font-size: 20px;
-	text-transform: uppercase;
+	
 }
 
 /*==== LogoNavbar ===== */
@@ -73,7 +74,8 @@ h6 {
 	}
 
 	#btn-co {
-		width: 18%;
+		width: 200px;
+		margin-bottom: 10px;
 	}
 }
 

@@ -1,7 +1,7 @@
 /*###########M E D I A  Q U E R I E S##########################*/
 @font-face {
-	font-family : 'kalamregular';
-	src : url("/public/assets/fonts/kalam-regular-webfont.eot");
+	font-family : 'kalamregular'; 
+	src : url("../fonts/kalam-regular-webfont.eot");
 	src : url("/public/assets/fonts/kalam-regular-webfont.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/kalam-regular-webfont.woff2") format('woff2'), url("/public/assets/fonts/kalam-regular-webfont.woff") format('woff'), url("/public/assets/fonts/kalam-regular-webfont.ttf") format('truetype');
 	font-weight : normal;
 	font-style : normal; 
@@ -52,30 +52,31 @@
 		flex-direction: column;
 		justify-content: space-around;
 		list-style: none;
-	}
-
-	.figure
-	{
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		margin: 0;
+		padding-left: 0;
 	}
 
 	.figure-blc
 	{
-		margin-left: 5%;
-		margin-right: 5%;
+		display: block;
+		text-align: center;
 	}
+
+	
 
 	.visuel
 	{
 		width: 96%;
+		opacity: 0.8;
+	}
+
+	.visuel:hover 
+	{
+		opacity: 1.8;
 	}
 
 	.container-desc
 	{
-		width: 96%;
+		width: 100%;
     }
     .slogantitle-ctn 
     {
@@ -99,7 +100,8 @@
     {
         display: flex;
         flex-direction: column;
-        align-self: center;
+		align-self: center;
+		
     }
 	.container, .container-md, .container-sm
 	{
@@ -130,6 +132,7 @@
 	.slogantitle
 	{
 		font-size: 55px;
+		font-family: 'kalamregular', cursive;
 	}
 
 	.glo-theme
@@ -142,24 +145,30 @@
 	{
 		display: grid;
         grid-template-columns: 1fr;
-        list-style: none;
+		list-style: none;
+		padding-left: 0;
     }
 
-	.figure
+	.figure-blc
 	{
-		display: grid;
-		grid-auto-columns: max-content;
-		grid-auto-rows: max-content;
+		display: block;
+		text-align: center;
 	}
 
 	.visuel
 	{
 		width: 75%;
+		opacity: 0.8;
+	}
+
+	.visuel:hover 
+	{
+		opacity: 1.8;
 	}
 
 	.container-desc
 	{
-		width: 75%;
+		width: 100%;
 	}
 
 }
@@ -177,7 +186,10 @@
         display: flex;
         align-self: center;
     }
-
+	.slogantitle 
+	{
+		font-family: 'kalamregular', cursive;
+	}
     .slogan 
     {
         display: flex;
@@ -216,26 +228,31 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
         grid-auto-rows: auto;
-        list-style: none;
+		list-style: none;
+		padding-left: 0;
 	}
 
-	.figure
+	.figure-blc
 	{
-		display: grid;
-		grid-auto-columns: max-content;
-		grid-auto-rows: max-content;
+		display: block;
+		text-align: center;
 	}
 
 	.visuel
 	{
         height: 220px;
         width: 250px;
-        margin-left: 15%;
+		margin-left: 15%;
+		opacity: 0.8;
 	}
 
+	.visuel:hover 
+	{
+		opacity: 1.8;
+	}	
 	.container-desc
 	{
-		width: 75%;
+		width: 100%;
 	}
 }
 
@@ -271,31 +288,39 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
-        list-style: none;
+		list-style: none;
+		padding-left: 0;
 	}
 
-	.figure
+	.figure-blc
 	{
-		display: grid;
-		grid-auto-columns: max-content;
-		grid-auto-rows: max-content;
+		display: block;
+		text-align: center;
 	}
 
 	.visuel
 	{
 	    border-radius:50px 50px 0 0;
 	    height: 220px;
-        width: 250px;;
+		width: 250px;;
+		opacity: 0.8;
+	}
 
+	.visuel:hover 
+	{
+		opacity: 1.8;
 	}
 
 	.container-desc
 	{
-		width: 75%;
+		width: 100%;
     }
     .container {
         display: flex;
         justify-content: center;
     }
-
+	.slogantitle 
+	{
+		font-family: 'kalamregular', cursive;
+	}
 }
