@@ -16,7 +16,24 @@
         background-color: rgb(236, 236, 236);
     }
     
-
+	.focus-in-contract-bck {
+		animation: focus-in-contract-bck 1s cubic-bezier(0.250,0.460,0.450,0.940) both;
+	  }
+	  
+	@keyframes focus-in-contract-bck {
+		0% {
+		  letter-spacing: 1em;
+		  transform: translateZ(300px);
+		  filter: blur(12px);
+		  opacity: 0;
+		}
+	  
+		100% {
+		  transform: translateZ(12px);
+		  filter: blur(0);
+		  opacity: 1;
+		}
+	  }
 	.slogan
 	{
 		height: 250px;
@@ -68,6 +85,9 @@
 		width: 96%;
 		opacity: 0.8;
 	}
+	.scale-in-hor-left {
+		animation : scale-in-hor-left 0.5s cubic-bezier(0.250,0.460,0.450,0.940) both;
+		}
 
 	.visuel:hover 
 	{
@@ -108,6 +128,24 @@
 		max-width: 70%;
 	}
 
+	.focus-in-contract-bck {
+		animation: focus-in-contract-bck 1s cubic-bezier(0.250,0.460,0.450,0.940) both;
+	  }
+	  
+	@keyframes focus-in-contract-bck {
+		0% {
+		  letter-spacing: 1em;
+		  transform: translateZ(300px);
+		  filter: blur(12px);
+		  opacity: 0;
+		}
+	  
+		100% {
+		  transform: translateZ(12px);
+		  filter: blur(0);
+		  opacity: 1;
+		}
+	  }
 	.slogan
 	{
 		width: auto;
@@ -160,6 +198,9 @@
 		width: 75%;
 		opacity: 0.8;
 	}
+	.scale-in-hor-left {
+		animation : scale-in-hor-left 0.5s cubic-bezier(0.250,0.460,0.450,0.940) both;
+		}
 
 	.visuel:hover 
 	{
@@ -185,7 +226,25 @@
     {
         display: flex;
         align-self: center;
-    }
+	}
+	.focus-in-contract-bck {
+		animation: focus-in-contract-bck 1s cubic-bezier(0.250,0.460,0.450,0.940) both;
+	  }
+	  
+	@keyframes focus-in-contract-bck {
+		0% {
+		  letter-spacing: 1em;
+		  transform: translateZ(300px);
+		  filter: blur(12px);
+		  opacity: 0;
+		}
+	  
+		100% {
+		  transform: translateZ(12px);
+		  filter: blur(0);
+		  opacity: 1;
+		}
+	  }
 	.slogantitle 
 	{
 		font-family: 'kalamregular', cursive;
@@ -245,6 +304,9 @@
 		margin-left: 15%;
 		opacity: 0.8;
 	}
+	.scale-in-hor-left {
+		animation : scale-in-hor-left 0.5s cubic-bezier(0.250,0.460,0.450,0.940) both;
+		}
 
 	.visuel:hover 
 	{
@@ -266,7 +328,26 @@
 	{
 		display: flex;
 		flex-direction: column;
-    }
+	}
+	
+	.focus-in-contract-bck {
+		animation: focus-in-contract-bck 1s cubic-bezier(0.250,0.460,0.450,0.940) both;
+	  }
+	  
+	@keyframes focus-in-contract-bck {
+		0% {
+		  letter-spacing: 1em;
+		  transform: translateZ(300px);
+		  filter: blur(12px);
+		  opacity: 0;
+		}
+	  
+		100% {
+		  transform: translateZ(12px);
+		  filter: blur(0);
+		  opacity: 1;
+		}
+	  }
     .humain1-ctn
     {
         display: flex;
