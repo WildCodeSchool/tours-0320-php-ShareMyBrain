@@ -1,11 +1,10 @@
 @font-face {
-	font-family: 'Rokkitt';
-	src: url("/public/assets/fonts/Rokkitt-Regular.eot");
-	src: url("/public/assets/fonts/Rokkitt-Regular.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/Rokkitt-Regular.woff") format('woff'), url("/public/assets/fonts/Rokkitt-Regular.ttf") format('truetype');
-	font-weight: normal;
-	font-style: normal;
+font-family : 'kalamregular';
+src : url("/public/assets/fonts/kalam-regular-webfont.eot");
+src : url("/public/assets/fonts/kalam-regular-webfont.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/kalam-regular-webfont.woff2") format('woff2'), url("/public/assets/fonts/kalam-regular-webfont.woff") format('woff'), url("/public/assets/fonts/kalam-regular-webfont.ttf") format('truetype');
+font-weight : normal;
+font-style : normal;
 }
-
 /*  general setting  */
 html {
 	font-style: normal;

@@ -1,14 +1,11 @@
 /*###########M E D I A  Q U E R I E S##########################*/
 @font-face {
-    font-family: 'Rokkitt';
-    src: url('/public/assets/fonts/Rokkitt-Regular.eot');
-    src: url('/public/assets/fonts/Rokkitt-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/public/assets/fonts/Rokkitt-Regular.woff') format('woff'),
-        url('/public/assets/fonts/Rokkitt-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family : 'kalamregular';
+	src : url("/public/assets/fonts/kalam-regular-webfont.eot");
+	src : url("/public/assets/fonts/kalam-regular-webfont.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/kalam-regular-webfont.woff2") format('woff2'), url("/public/assets/fonts/kalam-regular-webfont.woff") format('woff'), url("/public/assets/fonts/kalam-regular-webfont.ttf") format('truetype');
+	font-weight : normal;
+	font-style : normal; 
 }
-
 /** for telephone desktop's witdth between 250px and 800px */
 @media only screen and (max-width: 800px) and (min-width: 250px)
 {
@@ -38,6 +35,7 @@
 	.slogantitle
 	{
 		font-size: 40px;
+		font-family: 'kalamregular', cursive;
 		height: 70%;
 		margin-top: 5%;
 	}
