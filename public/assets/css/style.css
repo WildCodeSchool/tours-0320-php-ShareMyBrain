@@ -1,11 +1,10 @@
 @font-face {
-	font-family: 'Rokkitt';
-	src: url("/public/assets/fonts/Rokkitt-Regular.eot");
-	src: url("/public/assets/fonts/Rokkitt-Regular.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/Rokkitt-Regular.woff") format('woff'), url("/public/assets/fonts/Rokkitt-Regular.ttf") format('truetype');
-	font-weight: normal;
-	font-style: normal;
+font-family : 'kalamregular';
+src : url("/public/assets/fonts/kalam-regular-webfont.eot");
+src : url("/public/assets/fonts/kalam-regular-webfont.eot?#iefix") format('embedded-opentype'), url("/public/assets/fonts/kalam-regular-webfont.woff2") format('woff2'), url("/public/assets/fonts/kalam-regular-webfont.woff") format('woff'), url("/public/assets/fonts/kalam-regular-webfont.ttf") format('truetype');
+font-weight : normal;
+font-style : normal;
 }
-
 /*  general setting  */
 html {
 	font-style: normal;
@@ -19,6 +18,7 @@ img {
 p {
 	font-style: normal;
 	font-weight: 400;
+	font-family: 'kalamregular', cursive;
 }
 
 h3 {
@@ -26,6 +26,7 @@ h3 {
 	font-style: normal;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: 'kalamregular', cursive;
 }
 
 h2, h4, h5 {
@@ -37,9 +38,8 @@ h2, h4, h5 {
 h6 {
 	color: #000;
 	font-style: normal;
-	text-align: center;
 	font-size: 20px;
-	text-transform: uppercase;
+	
 }
 
 /*==== LogoNavbar ===== */
@@ -74,7 +74,8 @@ h6 {
 	}
 
 	#btn-co {
-		width: 18%;
+		width: 200px;
+		margin-bottom: 10px;
 	}
 }
 
