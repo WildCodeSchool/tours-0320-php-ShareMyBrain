@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="show">
+        <h1>Liste des questions</h1>
+            <ul>
+                {% for question in questions %}
+                     <li>{{question.content}}</li>
+                {% else %}
+                    <li>Nothing to display</li>
+                {% endfor %}
+            </ul>
+{% endblock %}

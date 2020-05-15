@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="show" id="header">
+        <div class="card border-success mb-2">
+            <h1 class="card-header text-center" >{{ question.content }}</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Réponse(s)</th>
+                    <th scope="col">Postée(s) par</th>
+                    <th scope="col">Date</th>
+                </tr>
+                <tbody>
+                <h5 class="card-title">{% for answer in answers %}</h5>
+                <tr>
+                    <th scope="row">-</th>
+                    <td>{{answer.content}}</td>
+                    <td>{{answer.username}}</td>
+                    <td>{{ answer.date|date("d/m/Y") }}</td>
+                </tr>
+                {% else %}
+                    <p>Pas encore de réponse !</p>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <a href="/answer/add/{{ question.id }}" class="btn btn-success">Ajouter une réponse</a>
+        <a href="/theme/index" class="btn btn-success">Retour à la liste des thèmes</a>
+        <a href="#header">Remonter en haut de la page</a>
+    </div>
+{% endblock %}

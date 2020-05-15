@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Contactez-nous{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    
+  <h3 class="display-8 text-center">Contactez-nous</h3>
+  <p>Vous trouverez ici une FAQ. En espérant que vous trouviez réponses à vos questions. </p>
+  <hr class="my-4">
+  <h5>J'ai publié une question, quand va-t-elle être visible par les utilisateurs?</h5>
+  <h6><em>Elle sera disponible sous 24h, sinon, n'hésitez pas à nous contacter</em></h6>
+  <hr class="my-4">
+  <h5>Est-il possible de rajouter un thème ?</h5>
+  <h6><em>Seul les administrateurs du site peuvent rajouter des thèmes mais cela n'est pas prévu pour le moment</em></h6>
+  <hr class="my-4">
+  <h5>Pourquoi ma question n'a t-elle pas été validé ?</h5>
+  <h6><em>Si la question n'a pas été validé, c'est sûrement qu'elle ne respectait pas les critères attendues par les administrateurs de ShareMyBrain</em></h6>
+  <hr class="my-4">
+  <h5>Pourquoi ne puis-je pas répondre à une question ?</h5>
+  <h6><em>Si la question est notée comme résolue, vous ne pouvez plus y répondre pour éviter un flow ininterrompue de réponse non pertinente</em></h6>
+  <hr class="my-4">
+  <p>Dans le cas où nous n'avons pas pu répondre à votre question, n'hésitez pas à nous contacter. Nous ferons au mieux pour vous répondre dans les meilleurs délais.</p>
+  <a class="btn btn-primary btn-lg" href="mailto:sharemybrain@gmail.com" role="button" id="ctc-btn">Nous contacter</a>
+</div>
+
+{% endblock %}
